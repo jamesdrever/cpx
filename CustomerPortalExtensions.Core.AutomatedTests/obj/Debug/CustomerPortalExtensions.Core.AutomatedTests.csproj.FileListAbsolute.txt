@@ -1,0 +1,9 @@
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\bin\Debug\CustomerPortalExtensions.Core.AutomatedTests.dll
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\bin\Debug\CustomerPortalExtensions.Core.AutomatedTests.pdb
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\bin\Debug\WebDriver.dll
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\bin\Debug\WebDriver.Support.dll
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\bin\Debug\WebDriver.xml
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\bin\Debug\WebDriver.Support.xml
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\obj\Debug\CustomerPortalExtensions.Core.AutomatedTests.dll
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\obj\Debug\CustomerPortalExtensions.Core.AutomatedTests.pdb
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.Core.AutomatedTests\obj\Debug\CustomerPortalExtensions.Core.AutomatedTests.csprojResolveAssemblyReference.cache

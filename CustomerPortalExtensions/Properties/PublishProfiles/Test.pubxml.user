@@ -1,0 +1,2181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Autofac.Configuration.dll">
+      <publishTime>06/07/2013 12:40:27</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>06/07/2013 12:40:27</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.dll">
+      <publishTime>06/07/2013 12:40:27</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>03/08/2013 11:26:26</publishTime>
+    </File>
+    <File Include="bin/businesslogic.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/ClientDependency.Core.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/ClientDependency.Core.Mvc.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/cms.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/controls.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/CookComputing.XmlRpcV2.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/CustomerPortalExtensions.dll">
+      <publishTime>06/12/2013 06:52:36</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/28/2013 13:59:23</publishTime>
+    </File>
+    <File Include="bin/Examine.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/FSharp.Core.dll">
+      <publishTime>02/28/2013 14:00:29</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/interfaces.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/Lucene.Net.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/MailChimp.dll">
+      <publishTime>02/28/2013 14:00:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationBlocks.Data.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>02/28/2013 10:46:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>02/28/2013 10:46:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>02/28/2013 10:46:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Helpers.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/28/2013 10:27:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/28/2013 10:27:09</publishTime>
+    </File>
+    <File Include="bin/Omu.ValueInjecter.dll">
+      <publishTime>04/18/2013 13:02:04</publishTime>
+    </File>
+    <File Include="bin/Our.Umbraco.uGoLive.47x.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/Our.Umbraco.uGoLive.Checks.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/Our.Umbraco.uGoLive.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Text.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/SQLCE4Umbraco.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/System.Data.SqlServerCe.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/System.Data.SqlServerCe.Entity.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/28/2013 10:27:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/28/2013 10:27:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/28/2013 10:27:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/28/2013 10:27:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/28/2013 10:27:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/28/2013 10:27:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/28/2013 10:27:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/28/2013 10:27:10</publishTime>
+    </File>
+    <File Include="bin/TidyNet.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/Umbraco.Core.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/umbraco.DataLayer.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/umbraco.dll">
+      <publishTime>02/28/2013 10:34:01</publishTime>
+    </File>
+    <File Include="bin/umbraco.editorControls.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/umbraco.MacroEngines.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/umbraco.macroRenderings.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/umbraco.providers.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/Umbraco.Web.UI.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/umbraco.webservices.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/umbraco.XmlSerializers.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/UmbracoExamine.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="bin/Unity.Mvc3.dll">
+      <publishTime>02/28/2013 14:14:11</publishTime>
+    </File>
+    <File Include="bin/UrlRewritingNet.UrlRewriter.dll">
+      <publishTime>02/28/2013 10:34:02</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/12/2013 13:13:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/07/2013 12:40:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>03/11/2013 10:40:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>03/11/2013 10:40:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>03/11/2013 10:40:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>03/11/2013 10:39:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>03/11/2013 10:39:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>03/11/2013 10:33:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/11/2013 10:33:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/configuration.svcinfo">
+      <publishTime>06/11/2013 06:55:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/configuration91.svcinfo">
+      <publishTime>06/11/2013 06:55:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AbortJobResponse.datasource">
+      <publishTime>03/08/2013 07:30:29</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AccountNoVerifyResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAccommodationBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddActionFromTemplateResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddActionLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddActionResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddActionSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAddressResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAddressUsageResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAppealBudgetDetailResponse.datasource">
+      <publishTime>03/08/2013 07:31:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAppealBudgetResponse.datasource">
+      <publishTime>03/08/2013 07:31:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAppealResourceResponse.datasource">
+      <publishTime>03/08/2013 07:31:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAppointmentResponse.datasource">
+      <publishTime>03/08/2013 07:30:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddAutoPaymentMethodResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddBankResponse.datasource">
+      <publishTime>03/08/2013 07:30:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddBatchResponse.datasource">
+      <publishTime>03/08/2013 07:30:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCampaignAppealResponse.datasource">
+      <publishTime>03/08/2013 07:31:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCampaignCostResponse.datasource">
+      <publishTime>03/08/2013 07:31:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCampaignResponse.datasource">
+      <publishTime>03/08/2013 07:31:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCampaignRoleResponse.datasource">
+      <publishTime>03/08/2013 07:31:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCampaignSegmentResponse.datasource">
+      <publishTime>03/08/2013 07:31:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCampaignSupplierResponse.datasource">
+      <publishTime>03/08/2013 07:31:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCollectionBoxResponse.datasource">
+      <publishTime>03/08/2013 07:31:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCollectionPISResponse.datasource">
+      <publishTime>03/08/2013 07:31:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCollectionPointResponse.datasource">
+      <publishTime>03/08/2013 07:31:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCollectionRegionResponse.datasource">
+      <publishTime>03/08/2013 07:31:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCollectionResourceResponse.datasource">
+      <publishTime>03/08/2013 07:31:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCollectorShiftResponse.datasource">
+      <publishTime>03/08/2013 07:31:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCommunicationsLogHistoryResponse.datasource">
+      <publishTime>03/08/2013 07:30:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCommunicationsLogLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCommunicationsLogResponse.datasource">
+      <publishTime>03/08/2013 07:30:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCommunicationsLogSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCommunicationsNumberResponse.datasource">
+      <publishTime>03/08/2013 07:30:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCommunicationUsageResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactAccountResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactCPDCycleResponse.datasource">
+      <publishTime>03/08/2013 07:31:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactCPDPointsResponse.datasource">
+      <publishTime>03/08/2013 07:31:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactEmailingResponse.datasource">
+      <publishTime>03/08/2013 07:30:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactFundraisingEventResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactIncentivesResponse.datasource">
+      <publishTime>03/08/2013 07:31:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactMailingDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactMailingResponse.datasource">
+      <publishTime>03/08/2013 07:30:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddContactSurveyResponse.datasource">
+      <publishTime>03/08/2013 07:31:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCpdObjectiveResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCreditCustomerResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCriteriaSetDetailsResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCriteriaSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCurrencyRateResponse.datasource">
+      <publishTime>03/08/2013 07:30:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddCustomFormDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddDelegateActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddDelegateLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddDisplayListItemResponse.datasource">
+      <publishTime>03/08/2013 07:31:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEnclosuresResponse.datasource">
+      <publishTime>03/08/2013 07:31:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEntityAlertResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddErrorLogResponse.datasource">
+      <publishTime>03/08/2013 07:30:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventBookingOptionResponse.datasource">
+      <publishTime>03/08/2013 07:30:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventCostResponse.datasource">
+      <publishTime>03/08/2013 07:30:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventDelegateResponse.datasource">
+      <publishTime>03/08/2013 07:30:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventFinancialLinkResponse.datasource">
+      <publishTime>03/08/2013 07:31:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventMailingResponse.datasource">
+      <publishTime>03/08/2013 07:30:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventOptionSessionResponse.datasource">
+      <publishTime>03/08/2013 07:30:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventOrganiserResponse.datasource">
+      <publishTime>03/08/2013 07:30:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventOwnerResponse.datasource">
+      <publishTime>03/08/2013 07:30:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventPersonnelResponse.datasource">
+      <publishTime>03/08/2013 07:30:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventPersonnelTaskResponse.datasource">
+      <publishTime>03/08/2013 07:30:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventPISResponse.datasource">
+      <publishTime>03/08/2013 07:30:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventResourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventResponse.datasource">
+      <publishTime>03/08/2013 07:30:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventRoomBlockBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventSessionActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventSessionResponse.datasource">
+      <publishTime>03/08/2013 07:30:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventSessionTestResponse.datasource">
+      <publishTime>03/08/2013 07:30:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventSessionTestResultResponse.datasource">
+      <publishTime>03/08/2013 07:30:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventSourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventSubmissionResponse.datasource">
+      <publishTime>03/08/2013 07:30:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddEventVenueBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddExternalDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddExternalReferenceResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddFundraisingPaymentLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddFundraisingPaymentScheduleResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddFundraisingRequestResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddFutureMembershipTypeResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddGiftAidDeclarationResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddH2HCollectionResponse.datasource">
+      <publishTime>03/08/2013 07:31:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddH2hCollectorResponse.datasource">
+      <publishTime>03/08/2013 07:31:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddHistoryItemResponse.datasource">
+      <publishTime>03/08/2013 07:31:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddLegacyBequestForecastResponse.datasource">
+      <publishTime>03/08/2013 07:31:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddLegacyBequestResponse.datasource">
+      <publishTime>03/08/2013 07:31:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddLegacyExpenseResponse.datasource">
+      <publishTime>03/08/2013 07:31:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddLegacyResponse.datasource">
+      <publishTime>03/08/2013 07:31:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddLegacyTaxCertificateResponse.datasource">
+      <publishTime>03/08/2013 07:31:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddLookupDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMailingHistoryResponse.datasource">
+      <publishTime>03/08/2013 07:30:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMailingResponse.datasource">
+      <publishTime>03/08/2013 07:30:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMailingSelectedContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMannedCollectionResponse.datasource">
+      <publishTime>03/08/2013 07:30:38</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMannedCollectorResponse.datasource">
+      <publishTime>03/08/2013 07:30:38</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMeetingDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:31:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMeetingLinkResponse.datasource">
+      <publishTime>03/08/2013 07:31:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMeetingResponse.datasource">
+      <publishTime>03/08/2013 07:31:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMembershipGroupResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddMembershipResponse.datasource">
+      <publishTime>03/08/2013 07:29:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddOrganisationResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPaymentPlanMemberResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPaymentPlanPaymentResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPaymentPlanResponse.datasource">
+      <publishTime>03/08/2013 07:29:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPositionActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPositionLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPositionResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPostTaxPledgeResponse.datasource">
+      <publishTime>03/08/2013 07:31:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddPreTaxPledgeResponse.datasource">
+      <publishTime>03/08/2013 07:31:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddProductSaleResponse.datasource">
+      <publishTime>03/08/2013 07:30:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddRegisteredUserResponse.datasource">
+      <publishTime>03/08/2013 07:30:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddRoleResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSegmentCostCentreResponse.datasource">
+      <publishTime>03/08/2013 07:30:39</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSegmentProductResponse.datasource">
+      <publishTime>03/08/2013 07:30:39</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSelectionSetContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSelectionSetDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSelectionSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSelectionStepResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddServiceBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddStandardDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddStickyNoteResponse.datasource">
+      <publishTime>03/08/2013 07:30:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddStockMovementResponse.datasource">
+      <publishTime>03/08/2013 07:30:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddStockToPackResponse.datasource">
+      <publishTime>03/08/2013 07:30:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSuppressionResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddSystemModuleUserResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddTableMaintenanceDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddTickBoxResponse.datasource">
+      <publishTime>03/08/2013 07:30:39</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddUnFulFilledContactIncentivesResponse.datasource">
+      <publishTime>03/08/2013 07:31:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddUnmannedCollectionResponse.datasource">
+      <publishTime>03/08/2013 07:30:39</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddWebItemResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AddXmlDataItemResponse.datasource">
+      <publishTime>03/08/2013 07:31:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AdjustmentTypes.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AllocatePISToDelegatesResponse.datasource">
+      <publishTime>03/08/2013 07:30:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.AmalgamateOrganisationResponse.datasource">
+      <publishTime>03/08/2013 07:31:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.BatchTypes.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CalculateEventBookingPriceFromMatrixResponse.datasource">
+      <publishTime>03/08/2013 07:31:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CancelAppropriateCertificateResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CancelEventBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CancelGayePledgesResponse.datasource">
+      <publishTime>03/08/2013 07:31:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CancelGiftAidDeclarationResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CancelMailingStandingOrdersResponse.datasource">
+      <publishTime>03/08/2013 07:31:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CancelReinstateProvisionalTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:31:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CancelServiceBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ChangeChequePayeeResponse.datasource">
+      <publishTime>03/08/2013 07:31:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ChangeMembershipTypeResponse.datasource">
+      <publishTime>03/08/2013 07:29:51</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ChangeOwnershipAccessLevelResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ChangeTransactionPayerResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckAdjustmentAllowedResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckCriteriaContainsORsResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckEventBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckLicenseDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckMailingDocumentsResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckMembershipTypeRateResponse.datasource">
+      <publishTime>03/08/2013 07:30:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckPromptForNewBranchResponse.datasource">
+      <publishTime>03/08/2013 07:31:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckSetupResponse.datasource">
+      <publishTime>03/08/2013 07:31:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckTraderDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CheckUsedElsewhereResponse.datasource">
+      <publishTime>03/08/2013 07:31:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CloseSiteResponse.datasource">
+      <publishTime>03/08/2013 07:30:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ConfirmCardSaleTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ConfirmCashSaleTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ConfirmCreditSaleTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:30:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ConfirmProvisionalTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:31:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CopyCampaignDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:39</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CopyEventPricingMatrixResponse.datasource">
+      <publishTime>03/08/2013 07:31:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CopyTraderApplicationResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CreateAccessControlDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.CreateCopyOfSelectionSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteAccessControlGroupResponse.datasource">
+      <publishTime>03/08/2013 07:30:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteActionLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteActionResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteActionSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:23</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:23</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteAddressResponse.datasource">
+      <publishTime>03/08/2013 07:30:23</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteAddressUsageResponse.datasource">
+      <publishTime>03/08/2013 07:30:23</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteAppealBudgetDetailResponse.datasource">
+      <publishTime>03/08/2013 07:30:40</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteAppealBudgetResponse.datasource">
+      <publishTime>03/08/2013 07:30:39</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteAppealResourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:40</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteAppointmentResponse.datasource">
+      <publishTime>03/08/2013 07:30:23</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteBatchResponse.datasource">
+      <publishTime>03/08/2013 07:30:23</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCampaignAppealResponse.datasource">
+      <publishTime>03/08/2013 07:30:40</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCampaignCostResponse.datasource">
+      <publishTime>03/08/2013 07:30:40</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCampaignResponse.datasource">
+      <publishTime>03/08/2013 07:30:40</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCampaignRoleResponse.datasource">
+      <publishTime>03/08/2013 07:30:40</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCampaignSegmentResponse.datasource">
+      <publishTime>03/08/2013 07:30:40</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCampaignSupplierResponse.datasource">
+      <publishTime>03/08/2013 07:30:41</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCollectionBoxResponse.datasource">
+      <publishTime>03/08/2013 07:30:41</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCollectionPISResponse.datasource">
+      <publishTime>03/08/2013 07:30:41</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCollectionPointResponse.datasource">
+      <publishTime>03/08/2013 07:30:41</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCollectionRegionResponse.datasource">
+      <publishTime>03/08/2013 07:30:41</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCollectionResourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:42</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCollectionResponse.datasource">
+      <publishTime>03/08/2013 07:30:41</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCollectorShiftResponse.datasource">
+      <publishTime>03/08/2013 07:30:42</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCommunicationsLogLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:24</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCommunicationsLogResponse.datasource">
+      <publishTime>03/08/2013 07:30:23</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCommunicationsLogSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:24</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCommunicationsNumberResponse.datasource">
+      <publishTime>03/08/2013 07:30:24</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCommunicationUsageResponse.datasource">
+      <publishTime>03/08/2013 07:30:24</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactAccountResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactCPDCycleResponse.datasource">
+      <publishTime>03/08/2013 07:31:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactCPDPointsResponse.datasource">
+      <publishTime>03/08/2013 07:31:05</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactFundraisingEventResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactIncentivesResponse.datasource">
+      <publishTime>03/08/2013 07:30:28</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactMailingDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:31:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:24</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteContactSurveyResponse.datasource">
+      <publishTime>03/08/2013 07:30:29</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCpdObjectiveResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCriteriaSetDetailsResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCriteriaSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCustomFormDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteCustomisedDisplayListResponse.datasource">
+      <publishTime>03/08/2013 07:31:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteDelegateActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteDelegateLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteDisplayListItemResponse.datasource">
+      <publishTime>03/08/2013 07:31:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteDuplicateContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteDuplicateSystemModuleUsersResponse.datasource">
+      <publishTime>03/08/2013 07:30:28</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEnclosuresResponse.datasource">
+      <publishTime>03/08/2013 07:30:28</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEntityAlertResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventBookingOptionResponse.datasource">
+      <publishTime>03/08/2013 07:30:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventCostResponse.datasource">
+      <publishTime>03/08/2013 07:30:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventDelegateResponse.datasource">
+      <publishTime>03/08/2013 07:30:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventFinancialLinkResponse.datasource">
+      <publishTime>03/08/2013 07:31:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventMailingResponse.datasource">
+      <publishTime>03/08/2013 07:30:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventOptionSessionResponse.datasource">
+      <publishTime>03/08/2013 07:30:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventOrganiserResponse.datasource">
+      <publishTime>03/08/2013 07:30:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventOwnerResponse.datasource">
+      <publishTime>03/08/2013 07:30:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventPersonnelResponse.datasource">
+      <publishTime>03/08/2013 07:30:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventPersonnelTaskResponse.datasource">
+      <publishTime>03/08/2013 07:30:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventPISResponse.datasource">
+      <publishTime>03/08/2013 07:30:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventResourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventResponse.datasource">
+      <publishTime>03/08/2013 07:30:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventRoomBlockBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventSessionActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventSessionResponse.datasource">
+      <publishTime>03/08/2013 07:30:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventSessionTestResponse.datasource">
+      <publishTime>03/08/2013 07:30:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventSessionTestResultResponse.datasource">
+      <publishTime>03/08/2013 07:30:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventSourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventSubmissionResponse.datasource">
+      <publishTime>03/08/2013 07:30:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteEventVenueBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteExternalDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteExternalReferenceResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteFastDataEntryControlResponse.datasource">
+      <publishTime>03/08/2013 07:31:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteFastDataEntryPageResponse.datasource">
+      <publishTime>03/08/2013 07:31:06</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteFundraisingPaymentScheduleResponse.datasource">
+      <publishTime>03/08/2013 07:30:25</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteFundraisingRequestResponse.datasource">
+      <publishTime>03/08/2013 07:30:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteFutureMembershipTypeResponse.datasource">
+      <publishTime>03/08/2013 07:30:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteGiftAidDeclarationResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteH2hCollectorResponse.datasource">
+      <publishTime>03/08/2013 07:30:42</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteHistoryItemResponse.datasource">
+      <publishTime>03/08/2013 07:30:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteInactiveSystemModuleUsersResponse.datasource">
+      <publishTime>03/08/2013 07:30:28</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteJobScheduleResponse.datasource">
+      <publishTime>03/08/2013 07:30:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteLegacyBequestForecastResponse.datasource">
+      <publishTime>03/08/2013 07:31:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteLegacyBequestResponse.datasource">
+      <publishTime>03/08/2013 07:31:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteLegacyExpenseResponse.datasource">
+      <publishTime>03/08/2013 07:31:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteLegacyResponse.datasource">
+      <publishTime>03/08/2013 07:31:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteLegacyTaxCertificateResponse.datasource">
+      <publishTime>03/08/2013 07:31:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteMailingSelectionSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:42</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteMannedCollectorResponse.datasource">
+      <publishTime>03/08/2013 07:30:42</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteMeetingDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:30:43</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteMeetingLinksResponse.datasource">
+      <publishTime>03/08/2013 07:30:43</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteMeetingResponse.datasource">
+      <publishTime>03/08/2013 07:30:42</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeletePositionActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeletePositionLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:27</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeletePositionResponse.datasource">
+      <publishTime>03/08/2013 07:30:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteProvisionalTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:30:27</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteReportAndContentResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteReportControlResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteReportItemResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteReportParameterResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteReportResponse.datasource">
+      <publishTime>03/08/2013 07:30:42</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteReportSectionResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteRoleResponse.datasource">
+      <publishTime>03/08/2013 07:30:27</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteSegmentCostCentreResponse.datasource">
+      <publishTime>03/08/2013 07:30:43</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteSegmentProductResponse.datasource">
+      <publishTime>03/08/2013 07:30:43</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteSelectedContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:24</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteSelectionSetContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:27</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteSelectionSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:27</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteSelectionStepsResponse.datasource">
+      <publishTime>03/08/2013 07:30:27</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteStandardDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:30:27</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteStickyNoteResponse.datasource">
+      <publishTime>03/08/2013 07:30:28</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteSuppressionResponse.datasource">
+      <publishTime>03/08/2013 07:30:28</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteTableMaintenanceDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:43</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteTickBoxResponse.datasource">
+      <publishTime>03/08/2013 07:30:43</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteTraderApplicationResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteTraderApplicationsResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DeleteXmlDataItemResponse.datasource">
+      <publishTime>03/08/2013 07:31:07</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DuplicateEventResponse.datasource">
+      <publishTime>03/08/2013 07:30:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DuplicateReportResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DuplicateReportSectionResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.DuplicateSurveyResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ExportCustomFormResponse.datasource">
+      <publishTime>03/08/2013 07:31:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ExportReportResponse.datasource">
+      <publishTime>03/08/2013 07:31:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ExportTraderApplicationResponse.datasource">
+      <publishTime>03/08/2013 07:31:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FDEControlTypes.datasource">
+      <publishTime>03/08/2013 07:29:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindActionsResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindAppealCollectionsResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindBatchesResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindCampaignAppealsResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindCampaignCollectionsResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindCampaignSegmentsResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindCampaignsResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindContactMailingDocumentsResponse.datasource">
+      <publishTime>03/08/2013 07:31:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindContactsResponse.datasource">
+      <publishTime>03/08/2013 07:31:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindCovenantsResponse.datasource">
+      <publishTime>03/08/2013 07:30:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindCreditCardAuthoritiesResponse.datasource">
+      <publishTime>03/08/2013 07:30:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindDirectDebitsResponse.datasource">
+      <publishTime>03/08/2013 07:30:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindDocumentsResponse.datasource">
+      <publishTime>03/08/2013 07:30:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindDuplicateContactsResponse.datasource">
+      <publishTime>03/08/2013 07:30:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindDuplicateOrganisationsResponse.datasource">
+      <publishTime>03/08/2013 07:30:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindEventPersonnelAppointmentsResponse.datasource">
+      <publishTime>03/08/2013 07:31:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindEventPersonnelResponse.datasource">
+      <publishTime>03/08/2013 07:31:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindEventsResponse.datasource">
+      <publishTime>03/08/2013 07:30:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindFundraisingPaymentScheduleResponse.datasource">
+      <publishTime>03/08/2013 07:31:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindGiftAidDeclarationsResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindInternalResourcesResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindInUniservPhoneBookResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindInvoiceCreditNotesResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindLegaciesResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindMailingsResponse.datasource">
+      <publishTime>03/08/2013 07:31:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindMembersResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindOrganisationsResponse.datasource">
+      <publishTime>03/08/2013 07:31:14</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindPaymentPlansResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindPayrollGivingPledgesResponse.datasource">
+      <publishTime>03/08/2013 07:30:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindPostTaxPayrollGivingPledgesResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindPreTaxPayrollGivingPledgesResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindProductsResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindPurchaseOrdersResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindSelectionSetsResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindStandardDocumentsResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindStandingOrdersResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindTextResponse.datasource">
+      <publishTime>03/08/2013 07:31:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindTransactionsResponse.datasource">
+      <publishTime>03/08/2013 07:30:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.FindVenueResponse.datasource">
+      <publishTime>03/08/2013 07:31:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetActionScheduleDateResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetAllPAFAddressesResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetApplicationControlsResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetAutoPaymentTypeResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetAvailableDatabasesResponse.datasource">
+      <publishTime>03/08/2013 07:30:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetBatchTypesResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetBranchFromPostCodeResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetClientCodeResponse.datasource">
+      <publishTime>03/08/2013 07:30:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetCountResponse.datasource">
+      <publishTime>03/08/2013 07:31:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetCriteriaVariableControlsResponse.datasource">
+      <publishTime>03/08/2013 07:30:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetCustomisedDisplayListResponse.datasource">
+      <publishTime>03/08/2013 07:31:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetDetailBalanceResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetDocumentFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetDocumentMergeDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetDocumentNumberForDistributionResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetFastDataEntryControlItemsResponse.datasource">
+      <publishTime>03/08/2013 07:31:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetFastDataEntryModuleDefaultsResponse.datasource">
+      <publishTime>03/08/2013 07:31:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetFDEControlTypesResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetFinancialAdjustmentTypeResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetFinderControlsResponse.datasource">
+      <publishTime>03/08/2013 07:31:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetFunctionControlsResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetImportTypesResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetLookupDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMailingDocumentMergeFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMailingDocumentParagraphsResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMailingRelevantMembersResponse.datasource">
+      <publishTime>03/08/2013 07:31:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMailingSelectedContactsResponse.datasource">
+      <publishTime>03/08/2013 07:31:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMailingSelectionCountResponse.datasource">
+      <publishTime>03/08/2013 07:31:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMailingSelectionRoughCountResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMailingTypeResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMaintenanceControlsResponse.datasource">
+      <publishTime>03/08/2013 07:31:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMaintenanceDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMDPDocumentInfoResponse.datasource">
+      <publishTime>03/08/2013 07:31:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMemberBalanceResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMemberRenewalAmountResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetMembershipEntitlementsResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetModifierPriceResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetNearestOrganisationResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetNextPaymentDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:52</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetOwnershipDepartmentInformationResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetOwnershipGroupInformationResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetOwnershipUserInformationResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetOwnershipUsersResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetPAFAddressResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetPAFPostcodeResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetPaymentPlanAutoPayDateResponse.datasource">
+      <publishTime>03/08/2013 07:30:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetPaymentPlanDetailTypesResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetProcessStockMovementTypeResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportControlResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportControlsResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportOutputResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportParametersResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportSectionDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportSectionDetailResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetReportVersionResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetStandardDocumentFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetSuppressContactsResponse.datasource">
+      <publishTime>03/08/2013 07:29:58</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetSurnamePrefixResponse.datasource">
+      <publishTime>03/08/2013 07:30:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetTableMaintenanceControlsResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetTraderApplicationResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetTraderPageTypeResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetVersionNumberResponse.datasource">
+      <publishTime>03/08/2013 07:30:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetWebControlsResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetWebInfoResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetWebMenusResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetWebPageInfoResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.GetWebPageItemsResponse.datasource">
+      <publishTime>03/08/2013 07:30:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ImportTraderAppInfoResponse.datasource">
+      <publishTime>03/08/2013 07:30:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.InitCustomFormsResponse.datasource">
+      <publishTime>03/08/2013 07:30:29</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.InitDataImportResponse.datasource">
+      <publishTime>03/08/2013 07:29:57</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.InitListManagerResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.InitMailSortDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:29</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.LockDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:30:32</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.LoginRegisteredUserResponse.datasource">
+      <publishTime>03/08/2013 07:30:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.LoginResponse.datasource">
+      <publishTime>03/08/2013 07:30:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.LogoutResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.MailingTypes.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.MakeBranchHistoricalResponse.datasource">
+      <publishTime>03/08/2013 07:30:38</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.MergeAddressResponse.datasource">
+      <publishTime>03/08/2013 07:30:29</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.MergeContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:28</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.MoveBranchPostcodeResponse.datasource">
+      <publishTime>03/08/2013 07:30:38</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.MovePositionResponse.datasource">
+      <publishTime>03/08/2013 07:30:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.MoveRegionResponse.datasource">
+      <publishTime>03/08/2013 07:30:38</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.PaymentPlanDetailTypes.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ppAutoPayMethods.datasource">
+      <publishTime>03/08/2013 07:29:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessBulkEMailResponse.datasource">
+      <publishTime>03/08/2013 07:31:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessJobResponse.datasource">
+      <publishTime>03/08/2013 07:31:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessListManagerMailingResponse.datasource">
+      <publishTime>03/08/2013 07:30:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessListManagerStepResponse.datasource">
+      <publishTime>03/08/2013 07:30:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessMailingCountResponse.datasource">
+      <publishTime>03/08/2013 07:31:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessMailingResponse.datasource">
+      <publishTime>03/08/2013 07:31:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessMailingSelectionResponse.datasource">
+      <publishTime>03/08/2013 07:31:08</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessPaymentPlanMenuResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessProductNumberAllocationResponse.datasource">
+      <publishTime>03/08/2013 07:31:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessStockMovementResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessStockMovementType.datasource">
+      <publishTime>03/08/2013 07:29:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessTraderDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessTraderMailmergeResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ProcessTraderPPEligibleForGiftAidResponse.datasource">
+      <publishTime>03/08/2013 07:29:54</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ReconcileStandingOrderResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ReissueChequeResponse.datasource">
+      <publishTime>03/08/2013 07:31:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.RenumberEventCandidatesResponse.datasource">
+      <publishTime>03/08/2013 07:30:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.RenumberReportItemsResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.RenumberReportParametersResponse.datasource">
+      <publishTime>03/08/2013 07:29:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.RenumberReportSectionsResponse.datasource">
+      <publishTime>03/08/2013 07:29:50</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.RenumberSessionBookingsResponse.datasource">
+      <publishTime>03/08/2013 07:30:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ResubmitJobScheduleResponse.datasource">
+      <publishTime>03/08/2013 07:30:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.ReverseTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SaveListManagerSelectionResponse.datasource">
+      <publishTime>03/08/2013 07:30:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SaveTraderApplicationBankResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SaveTraderApplicationResponse.datasource">
+      <publishTime>03/08/2013 07:29:56</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectActionDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:15</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectAddressDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectAppointmentDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectBankAccountDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectCampaignDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectConfigValueResponse.datasource">
+      <publishTime>03/08/2013 07:30:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectContactDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectCovenantDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectCriteriaSetStepsResponse.datasource">
+      <publishTime>03/08/2013 07:30:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectDashboardDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectDelegateDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectDirectDebitDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:18</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectDocumentDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectEventDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectExternalDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:09</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectFastDataEntryDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectFinancialProcessingDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectFundraisingEventDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectFundraisingRequestDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectGiftAidDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectJobProcessorsDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectJobScheduleDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectJournalDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectLegacyBequestDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectListManagerCountResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectListManagerDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectMembershipDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectPaymentPlanDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectPledgeDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectPurchaseInvoiceDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectPurchaseOrderDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectSelectionSetAppointmentsResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectSelectionSetCommsNumbersResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectSelectionSetDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectSystemModuleUsersDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:17</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectTableDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectTelemarketingContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectTransactionDataResponse.datasource">
+      <publishTime>03/08/2013 07:29:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SelectUserHistoryResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SetConfigResponse.datasource">
+      <publishTime>03/08/2013 07:30:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SetMailingDocumentFulfilmentResponse.datasource">
+      <publishTime>03/08/2013 07:31:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.SetTraderApplicationsResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.TerminateListManagerResponse.datasource">
+      <publishTime>03/08/2013 07:30:19</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.TraderPageType.datasource">
+      <publishTime>03/08/2013 07:29:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.TransferWaitingListBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UniservPostCheckResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAccessControlItemResponse.datasource">
+      <publishTime>03/08/2013 07:30:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAccommodationBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateActionLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateActionResponse.datasource">
+      <publishTime>03/08/2013 07:30:30</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:31</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAddressResponse.datasource">
+      <publishTime>03/08/2013 07:30:31</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAddressUsageResponse.datasource">
+      <publishTime>03/08/2013 07:30:31</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAppealBudgetDetailResponse.datasource">
+      <publishTime>03/08/2013 07:30:44</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAppealBudgetResponse.datasource">
+      <publishTime>03/08/2013 07:30:44</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAppealResourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:44</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAppointmentResponse.datasource">
+      <publishTime>03/08/2013 07:30:31</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateAppropriateCertificateResponse.datasource">
+      <publishTime>03/08/2013 07:30:31</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateBankersOrderResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateBatchResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCampaignAppealResponse.datasource">
+      <publishTime>03/08/2013 07:30:44</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCampaignCostResponse.datasource">
+      <publishTime>03/08/2013 07:30:44</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCampaignResponse.datasource">
+      <publishTime>03/08/2013 07:30:44</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCampaignRoleResponse.datasource">
+      <publishTime>03/08/2013 07:30:45</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCampaignSegmentResponse.datasource">
+      <publishTime>03/08/2013 07:30:45</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCampaignSupplierResponse.datasource">
+      <publishTime>03/08/2013 07:30:45</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCollectionBoxResponse.datasource">
+      <publishTime>03/08/2013 07:30:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCollectionPISResponse.datasource">
+      <publishTime>03/08/2013 07:30:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCollectionPointResponse.datasource">
+      <publishTime>03/08/2013 07:30:45</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCollectionResourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:45</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCollectorShiftResponse.datasource">
+      <publishTime>03/08/2013 07:30:45</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCommunicationsLogLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:32</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCommunicationsLogResponse.datasource">
+      <publishTime>03/08/2013 07:30:31</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCommunicationsLogSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:32</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCommunicationsNumberResponse.datasource">
+      <publishTime>03/08/2013 07:30:32</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCommunicationsNumbersAddressResponse.datasource">
+      <publishTime>03/08/2013 07:30:32</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCommunicationUsageResponse.datasource">
+      <publishTime>03/08/2013 07:30:32</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactAccountResponse.datasource">
+      <publishTime>03/08/2013 07:30:33</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactCPDCycleResponse.datasource">
+      <publishTime>03/08/2013 07:31:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactCPDPointsResponse.datasource">
+      <publishTime>03/08/2013 07:31:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactFundraisingEventResponse.datasource">
+      <publishTime>03/08/2013 07:30:33</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactMailingDocumentFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:32</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactSurveyResponse.datasource">
+      <publishTime>03/08/2013 07:30:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateContactSurveyResponsesResponse.datasource">
+      <publishTime>03/08/2013 07:30:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCpdObjectiveResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCreditCardAuthorityResponse.datasource">
+      <publishTime>03/08/2013 07:30:33</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCreditCardResponse.datasource">
+      <publishTime>03/08/2013 07:30:33</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCreditCustomerResponse.datasource">
+      <publishTime>03/08/2013 07:30:33</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCriteriaSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:33</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateCustomFormDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:33</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateDelegateActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateDelegateLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateDepartmentNotesResponse.datasource">
+      <publishTime>03/08/2013 07:30:34</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateDespatchNoteResponse.datasource">
+      <publishTime>03/08/2013 07:30:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateDirectDebitResponse.datasource">
+      <publishTime>03/08/2013 07:30:34</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateDocumentFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateDuplicateContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEntityAlertItemResponse.datasource">
+      <publishTime>03/08/2013 07:30:29</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEntityAlertResponse.datasource">
+      <publishTime>03/08/2013 07:30:29</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventBookingOptionResponse.datasource">
+      <publishTime>03/08/2013 07:30:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventBookingResponse.datasource">
+      <publishTime>03/08/2013 07:31:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventBookingTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:29:55</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventCostResponse.datasource">
+      <publishTime>03/08/2013 07:30:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventDelegateResponse.datasource">
+      <publishTime>03/08/2013 07:30:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventLoanItemResponse.datasource">
+      <publishTime>03/08/2013 07:30:49</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventOptionSessionResponse.datasource">
+      <publishTime>03/08/2013 07:30:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventOrganiserResponse.datasource">
+      <publishTime>03/08/2013 07:30:20</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventPersonnelResponse.datasource">
+      <publishTime>03/08/2013 07:30:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventPersonnelTaskResponse.datasource">
+      <publishTime>03/08/2013 07:30:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventPISResponse.datasource">
+      <publishTime>03/08/2013 07:30:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventResourceResponse.datasource">
+      <publishTime>03/08/2013 07:30:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventResponse.datasource">
+      <publishTime>03/08/2013 07:31:00</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventRoomAllocationResponse.datasource">
+      <publishTime>03/08/2013 07:30:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventRoomBlockBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventSessionResponse.datasource">
+      <publishTime>03/08/2013 07:30:21</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventSessionTestResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventSessionTestResultResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventSubjectResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventSubmissionResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateEventVenueBookingResponse.datasource">
+      <publishTime>03/08/2013 07:30:22</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateExternalDataResponse.datasource">
+      <publishTime>03/08/2013 07:31:10</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateExternalReferenceResponse.datasource">
+      <publishTime>03/08/2013 07:30:34</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFastDataEntryPageAccessLevelsResponse.datasource">
+      <publishTime>03/08/2013 07:31:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFastDataEntryPageItemControlsResponse.datasource">
+      <publishTime>03/08/2013 07:31:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFastDataEntryPageItemResponse.datasource">
+      <publishTime>03/08/2013 07:31:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFastDataEntryPageResponse.datasource">
+      <publishTime>03/08/2013 07:31:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFastDataEntryUserControlResponse.datasource">
+      <publishTime>03/08/2013 07:31:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFinancialHistoryResponse.datasource">
+      <publishTime>03/08/2013 07:30:34</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFinderControlsResponse.datasource">
+      <publishTime>03/08/2013 07:31:11</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFundraisingPaymentScheduleResponse.datasource">
+      <publishTime>03/08/2013 07:30:34</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFundraisingRequestResponse.datasource">
+      <publishTime>03/08/2013 07:30:34</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateFutureMembershipTypeResponse.datasource">
+      <publishTime>03/08/2013 07:30:34</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateGiftAidDeclarationResponse.datasource">
+      <publishTime>03/08/2013 07:30:35</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateH2HCollectionResponse.datasource">
+      <publishTime>03/08/2013 07:30:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateH2hCollectorResponse.datasource">
+      <publishTime>03/08/2013 07:30:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateHistoryItemResponse.datasource">
+      <publishTime>03/08/2013 07:31:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateInvoiceResponse.datasource">
+      <publishTime>03/08/2013 07:30:35</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateLegacyBequestForecastResponse.datasource">
+      <publishTime>03/08/2013 07:31:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateLegacyBequestReceiptResponse.datasource">
+      <publishTime>03/08/2013 07:31:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateLegacyBequestResponse.datasource">
+      <publishTime>03/08/2013 07:31:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateLegacyExpenseResponse.datasource">
+      <publishTime>03/08/2013 07:31:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateLegacyResponse.datasource">
+      <publishTime>03/08/2013 07:31:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateLegacyTaxCertificateResponse.datasource">
+      <publishTime>03/08/2013 07:31:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:35</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMailingContactAddressResponse.datasource">
+      <publishTime>03/08/2013 07:30:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMailingDocumentFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMailingHistoryResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMailingResponse.datasource">
+      <publishTime>03/08/2013 07:30:04</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMailingSelectionSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMaintenanceControlsResponse.datasource">
+      <publishTime>03/08/2013 07:31:12</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMaintenanceTablesResponse.datasource">
+      <publishTime>03/08/2013 07:30:35</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMannedCollectionResponse.datasource">
+      <publishTime>03/08/2013 07:30:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMannedCollectorResponse.datasource">
+      <publishTime>03/08/2013 07:30:46</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMeetingLinkResponse.datasource">
+      <publishTime>03/08/2013 07:31:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMeetingResponse.datasource">
+      <publishTime>03/08/2013 07:31:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMemberResponse.datasource">
+      <publishTime>03/08/2013 07:30:35</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateMembershipGroupResponse.datasource">
+      <publishTime>03/08/2013 07:30:35</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePaymentPlanInfoResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePaymentPlanResponse.datasource">
+      <publishTime>03/08/2013 07:29:53</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePickingListResponse.datasource">
+      <publishTime>03/08/2013 07:31:16</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePositionActivityResponse.datasource">
+      <publishTime>03/08/2013 07:30:36</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePositionLinkResponse.datasource">
+      <publishTime>03/08/2013 07:30:36</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePositionResponse.datasource">
+      <publishTime>03/08/2013 07:30:36</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePostTaxPledgeResponse.datasource">
+      <publishTime>03/08/2013 07:31:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePreTaxPledgeResponse.datasource">
+      <publishTime>03/08/2013 07:31:13</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateProvisionalTransactionResponse.datasource">
+      <publishTime>03/08/2013 07:30:36</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePurchaseOrderPaymentResponse.datasource">
+      <publishTime>03/08/2013 07:30:36</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdatePurchaseOrderResponse.datasource">
+      <publishTime>03/08/2013 07:30:36</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateRegisteredUserResponse.datasource">
+      <publishTime>03/08/2013 07:30:01</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateRoleResponse.datasource">
+      <publishTime>03/08/2013 07:30:37</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateSegmentCostCentreResponse.datasource">
+      <publishTime>03/08/2013 07:30:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateSegmentProductResponse.datasource">
+      <publishTime>03/08/2013 07:30:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateSelectionSetResponse.datasource">
+      <publishTime>03/08/2013 07:30:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateStandardDocumentFileResponse.datasource">
+      <publishTime>03/08/2013 07:29:59</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateStandardDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:30:37</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateStandingOrderResponse.datasource">
+      <publishTime>03/08/2013 07:30:37</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateStickyNoteResponse.datasource">
+      <publishTime>03/08/2013 07:30:37</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateSubscriptionResponse.datasource">
+      <publishTime>03/08/2013 07:30:37</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateSuppressionResponse.datasource">
+      <publishTime>03/08/2013 07:30:37</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateSystemModuleUserResponse.datasource">
+      <publishTime>03/08/2013 07:30:38</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateTableDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:38</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateTableMaintenanceDataResponse.datasource">
+      <publishTime>03/08/2013 07:30:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateTableNoteResponse.datasource">
+      <publishTime>03/08/2013 07:30:47</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateTelemarketingContactResponse.datasource">
+      <publishTime>03/08/2013 07:30:03</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateTickBoxResponse.datasource">
+      <publishTime>03/08/2013 07:30:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateUnmannedCollectionResponse.datasource">
+      <publishTime>03/08/2013 07:30:48</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateWebDocumentResponse.datasource">
+      <publishTime>03/08/2013 07:30:36</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/CustomerPortal.CareWebServices.UpdateWebItemResponse.datasource">
+      <publishTime>03/08/2013 07:30:02</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/NDataAccess.disco">
+      <publishTime>06/11/2013 06:55:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/NDataAccess.wsdl">
+      <publishTime>06/11/2013 06:55:26</publishTime>
+    </File>
+    <File Include="Service References/CareWebServices/Reference.svcmap">
+      <publishTime>06/11/2013 06:55:26</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/28/2013 10:27:06</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/12/2013 06:52:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
