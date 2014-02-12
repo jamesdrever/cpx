@@ -227,7 +227,7 @@ namespace CustomerPortalExtensions.Application.Contacts
             return operationStatus;
         }
 
-        public List<CustomerPortal.Domain.Contacts.ContactTitle> GetContactTitles()
+        public List<ContactTitle> GetContactTitles()
         {
             return _contactSynchroniser.GetContactTitles();
         }

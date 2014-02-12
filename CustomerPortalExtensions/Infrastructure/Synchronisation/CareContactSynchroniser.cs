@@ -561,7 +561,7 @@ namespace CustomerPortalExtensions.Infrastructure.Synchronisation
 
         //TODO: should this be a web service call rather than a direct database call
         //faster as database call, but creates need for db connection
-        public List<CustomerPortal.Domain.Contacts.ContactTitle> GetContactTitles()
+        public List<ContactTitle> GetContactTitles()
         {
             var db = new Database(ConfigurationManager.AppSettings["CP_SyncDSN"], "System.Data.SqlClient");
             //hacky way to map database fields using PetaPoco

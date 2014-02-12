@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace CustomerPortalExtensions.Domain.SocialNetworking
+﻿namespace CustomerPortalExtensions.Domain.SocialNetworking
 {
     public class Tweet
     {
