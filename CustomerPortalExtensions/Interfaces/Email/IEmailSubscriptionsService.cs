@@ -1,9 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using CustomerPortalExtensions.Domain.EmailNewsletter;
+﻿using CustomerPortalExtensions.Domain.EmailNewsletter;
 
 namespace CustomerPortalExtensions.Interfaces.Email
 {
@@ -11,6 +6,5 @@ namespace CustomerPortalExtensions.Interfaces.Email
     {
         EmailSubscriptionsOperationStatus SynchroniseSubscriptions(EmailSubscriptions subscriptions);
         EmailSubscriptionsOperationStatus GetEmailSubscriptions();
-        //EmailNewsletterContact GetContact(string email);
     }
 }

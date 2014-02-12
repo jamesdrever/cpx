@@ -4,7 +4,6 @@ using System.Web.Profile;
 using System;
 using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Domain.Operations;
-using CustomerPortalExtensions.Domain;
 using CustomerPortalExtensions.Interfaces.Contacts;
 using umbraco.cms.businesslogic.member;
 

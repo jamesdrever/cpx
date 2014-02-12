@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Omu.ValueInjecter;
+﻿using Omu.ValueInjecter;
 
-namespace CustomerPortal.Infrastructure.Services
+namespace CustomerPortalExtensions.Infrastructure.Services.AutoMapper
 {
     public class IgnoreNulls : ConventionInjection
     {

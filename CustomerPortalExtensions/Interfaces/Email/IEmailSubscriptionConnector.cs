@@ -1,6 +1,4 @@
-﻿using System.Web.Services.Description;
-using CustomerPortalExtensions.Domain.EmailNewsletter;
-using System.ComponentModel.Composition;
+﻿using CustomerPortalExtensions.Domain.EmailNewsletter;
 
 namespace CustomerPortalExtensions.Interfaces.Email
 {

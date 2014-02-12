@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Interfaces.Contacts;
 
 namespace CustomerPortalExtensions.Infrastructure.Contacts
@@ -13,7 +14,7 @@ namespace CustomerPortalExtensions.Infrastructure.Contacts
             return false;
         }
 
-        public Domain.ContactOperationStatus Get(string userName)
+        public ContactOperationStatus Get(string userName)
         {
             throw new NotImplementedException();
         }

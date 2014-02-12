@@ -1,7 +1,5 @@
-﻿using System;
-using CustomerPortalExtensions.Application.Ecommerce.Discounts;
+﻿using CustomerPortalExtensions.Application.Ecommerce.Discounts;
 using CustomerPortalExtensions.Interfaces.ECommerce;
-using CustomerPortalExtensions.Interfaces.Config;
 
 namespace CustomerPortalExtensions.Infrastructure.ECommerce.Discounts
 {

@@ -1,9 +1,7 @@
 ﻿using System;
-using CustomerPortalExtensions.Domain;
 using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Domain.Operations;
 using CustomerPortalExtensions.Infrastructure.Services.Database;
-using CustomerPortalExtensions.Interfaces;
 using CustomerPortalExtensions.Interfaces.Contacts;
 
 namespace CustomerPortalExtensions.Infrastructure.Contacts

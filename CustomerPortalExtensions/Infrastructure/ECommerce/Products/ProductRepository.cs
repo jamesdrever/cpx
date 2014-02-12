@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Data;
-using System.Globalization;
 using System.Linq;
 using System;
 using CustomerPortalExtensions.Domain.Operations;
 using CustomerPortalExtensions.Helper.Umbraco;
-using CustomerPortalExtensions.Domain.Ecommerce;
 using umbraco.interfaces;
 using umbraco.NodeFactory;
 using CustomerPortalExtensions.Interfaces.ECommerce;
@@ -25,13 +23,13 @@ namespace CustomerPortalExtensions.Infrastructure.ECommerce.Products
             {
                 throw new ArgumentNullException("config");
             }
-            this._config = config;
+            _config = config;
             _locationHandlerFactory = locationHandlerFactory;
             if (locationHandlerFactory == null)
             {
                 throw new ArgumentNullException("locationHandlerFactory");
             }
-            this._locationHandlerFactory = locationHandlerFactory;
+            _locationHandlerFactory = locationHandlerFactory;
         }
 
         public ProductOperationStatus GetProduct(int productId, int optionId)

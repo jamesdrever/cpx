@@ -1,25 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using CustomerPortalExtensions.Interfaces.Ecommerce;
 using Examine;
-using UmbracoExamine;
 using CustomerPortalExtensions.Domain.Ecommerce;
 
 namespace CustomerPortalExtensions.Application.Ecommerce.Locations
 {
     public class LocationHandler : ILocationHandler
     {
+
+        private const string SearchProvider = "LearningLocationsSearcher";
+        private const string NodeTypeAlias = "FSCCentreHomePage";
+
         public Location GetLocation(string locationCode)
         {
             //TODO: none of the Examine config should be hard-coded
-            var locSearcher = ExamineManager.Instance.SearchProviderCollection["LearningLocationsSearcher"];
+            var locSearcher = ExamineManager.Instance.SearchProviderCollection[SearchProvider];
             var locSearchCriteria = locSearcher.CreateSearchCriteria();
-            var locQuery = locSearchCriteria.NodeTypeAlias("FSCCentreHomePage");
+            var locQuery = locSearchCriteria.NodeTypeAlias(NodeTypeAlias);
             locQuery = locQuery.And().Field("centreInitials", locationCode);
             var locSearchResults = locSearcher.Search(locQuery.Compile());
-            Location location = new Location();
+            var location = new Location();
             if (locSearchResults.Any())
             {
                 //TODO:make sure the fields exist!
@@ -30,7 +31,6 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Locations
             else
             {
                 location.Title = locationCode;
-                locationCode = locationCode;
             }
             return location;
         }
@@ -38,12 +38,12 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Locations
         public List<Location> GetLocations()
         {
             //TODO: none of the Examine config should be hard-coded
-            var locSearcher = ExamineManager.Instance.SearchProviderCollection["LearningLocationsSearcher"];
+            var locSearcher = ExamineManager.Instance.SearchProviderCollection[SearchProvider];
             var locSearchCriteria = locSearcher.CreateSearchCriteria();
-            var locQuery = locSearchCriteria.NodeTypeAlias("FSCCentreHomePage");
+            var locQuery = locSearchCriteria.NodeTypeAlias(NodeTypeAlias);
             //locQuery = locQuery.And().Field("centreInitials", locationCode);
             var locSearchResults = locSearcher.Search(locQuery.Compile());
-            List<Location> locations=new List<Location>();
+            var locations=new List<Location>();
             foreach (var location in locSearchResults)
             {
                 string locationEmail = location.Fields.ContainsKey("centreEmail") ? location.Fields["centreEmail"] : "";

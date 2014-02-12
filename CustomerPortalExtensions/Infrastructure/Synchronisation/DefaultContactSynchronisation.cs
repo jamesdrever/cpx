@@ -1,6 +1,4 @@
-﻿using CustomerPortal.Domain.Contacts;
-using CustomerPortalExtensions.Domain;
-using CustomerPortalExtensions.Domain.Contacts;
+﻿using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Domain.Membership;
 using CustomerPortalExtensions.Infrastructure.Services.Database;
 using CustomerPortalExtensions.Interfaces.Synchronisation;
@@ -27,30 +25,30 @@ namespace CustomerPortalExtensions.Infrastructure.Synchronisation
             return false;
         }
 
-        CustomerPortalExtensions.Domain.ContactOperationStatus IContactSynchroniser.SaveContact(Contact contact)
+        ContactOperationStatus IContactSynchroniser.SaveContact(Contact contact)
         {
             throw new NotImplementedException();
         }
 
-        CustomerPortalExtensions.Domain.ContactOperationStatus IContactSynchroniser.GetContact(int externalContactNumber)
-        {
-            throw new NotImplementedException();
-        }
-
-
-        public CustomerPortalExtensions.Domain.ContactPreferencesOperationStatus SaveContactPreferences(CustomerPortalExtensions.Domain.ContactPreferences preferences)
+        ContactOperationStatus IContactSynchroniser.GetContact(int externalContactNumber)
         {
             throw new NotImplementedException();
         }
 
 
-        CustomerPortalExtensions.Domain.ContactPreferencesOperationStatus IContactSynchroniser.GetContactPreferences(int externalContactNumber)
+        public ContactPreferencesOperationStatus SaveContactPreferences(ContactPreferences preferences)
         {
             throw new NotImplementedException();
         }
 
 
-        public CustomerPortalExtensions.Domain.ContactPreferencesOperationStatus GetCurrentContactPreferences(int externalContactNumber)
+        ContactPreferencesOperationStatus IContactSynchroniser.GetContactPreferences(int externalContactNumber)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public ContactPreferencesOperationStatus GetCurrentContactPreferences(int externalContactNumber)
         {
             throw new NotImplementedException();
         }

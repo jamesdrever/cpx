@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using CustomerPortalExtensions.Domain.Contacts;
+﻿using System.Collections.Generic;
 using CustomerPortalExtensions.Domain.Operations;
 
-namespace CustomerPortalExtensions.Domain
+namespace CustomerPortalExtensions.Domain.Contacts
 {
     public class ContactDuplicatesOperationStatus : OperationStatus
     {

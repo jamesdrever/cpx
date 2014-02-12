@@ -1,5 +1,4 @@
-﻿using CustomerPortalExtensions.Domain;
-using CustomerPortalExtensions.Domain.Contacts;
+﻿using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Interfaces.ECommerce;
 using CustomerPortalExtensions.Domain.ECommerce;
 

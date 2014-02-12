@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using CustomerPortalExtensions.Domain;
-using CustomerPortalExtensions.Domain.Contacts;
+﻿using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Domain.ECommerce;
-using CustomerPortalExtensions.Domain.Ecommerce;
-using CustomerPortalExtensions.Domain.Operations;
 
 namespace CustomerPortalExtensions.Interfaces.ECommerce
 {
