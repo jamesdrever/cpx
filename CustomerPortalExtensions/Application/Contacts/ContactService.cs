@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Domain.Operations;
+using CustomerPortalExtensions.Infrastructure.Services.AutoMapper;
 using CustomerPortalExtensions.Interfaces.Contacts;
-using CustomerPortalExtensions.Interfaces.ECommerce;
 using CustomerPortalExtensions.Interfaces.Synchronisation;
 using Omu.ValueInjecter;
 

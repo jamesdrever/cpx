@@ -1,0 +1,2014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4AD0564-7C11-45C4-875A-A0D9548A296B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CARECustomerPortalExtensions</RootNamespace>
+    <AssemblyName>CARECustomerPortalExtensions</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CareContactSynchroniser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CareWebServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerPortalExtensions\CustomerPortalExtensions.Core.csproj">
+      <Project>{204110a8-76d1-4682-b264-e9ba9d505808}</Project>
+      <Name>CustomerPortalExtensions.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AbortJobResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AccountNoVerifyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAccommodationBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddActionFromTemplateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddActionLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddActionSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAddressUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAppealBudgetDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAppealBudgetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAppealResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAppointmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddAutoPaymentMethodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddBankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddBatchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCampaignAppealResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCampaignCostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCampaignResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCampaignRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCampaignSegmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCampaignSupplierResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCollectionBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCollectionPISResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCollectionPointResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCollectionRegionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCollectionResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCollectorShiftResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCommunicationsLogHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCommunicationsLogLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCommunicationsLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCommunicationsLogSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCommunicationsNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCommunicationUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactCPDCycleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactCPDPointsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactEmailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactFundraisingEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactIncentivesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactMailingDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactMailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddContactSurveyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCpdObjectiveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCreditCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCriteriaSetDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCriteriaSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCurrencyRateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddCustomFormDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddDelegateActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddDelegateLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddDisplayListItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEnclosuresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEntityAlertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddErrorLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventBookingOptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventCostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventDelegateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventFinancialLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventMailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventOptionSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventOrganiserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventOwnerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventPersonnelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventPersonnelTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventPISResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventRoomBlockBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventSessionActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventSessionTestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventSessionTestResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventSourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventSubmissionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddEventVenueBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddExternalDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddExternalReferenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddFundraisingPaymentLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddFundraisingPaymentScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddFundraisingRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddFutureMembershipTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddGiftAidDeclarationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddH2HCollectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddH2hCollectorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddHistoryItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddLegacyBequestForecastResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddLegacyBequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddLegacyExpenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddLegacyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddLegacyTaxCertificateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddLookupDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMailingHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMailingSelectedContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMannedCollectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMannedCollectorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMeetingDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMeetingLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMeetingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMembershipGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddMembershipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddOrganisationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPaymentPlanMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPaymentPlanPaymentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPaymentPlanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPositionActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPositionLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPositionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPostTaxPledgeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddPreTaxPledgeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddProductSaleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddRegisteredUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSegmentCostCentreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSegmentProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSelectionSetContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSelectionSetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSelectionSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSelectionStepResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddServiceBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddStandardDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddStickyNoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddStockMovementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddStockToPackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSuppressionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddSystemModuleUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddTableMaintenanceDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddTickBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddUnFulFilledContactIncentivesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddUnmannedCollectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddWebItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AddXmlDataItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AllocatePISToDelegatesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.AmalgamateOrganisationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CalculateEventBookingPriceFromMatrixResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CancelAppropriateCertificateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CancelEventBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CancelGayePledgesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CancelGiftAidDeclarationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CancelMailingStandingOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CancelReinstateProvisionalTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CancelServiceBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ChangeChequePayeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ChangeMembershipTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ChangeOwnershipAccessLevelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ChangeTransactionPayerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckAdjustmentAllowedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckCriteriaContainsORsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckEventBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckLicenseDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckMailingDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckMembershipTypeRateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckPromptForNewBranchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckSetupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckTraderDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CheckUsedElsewhereResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CloseSiteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ConfirmCardSaleTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ConfirmCashSaleTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ConfirmCreditSaleTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ConfirmProvisionalTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CopyCampaignDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CopyEventPricingMatrixResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CopyTraderApplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CreateAccessControlDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.CreateCopyOfSelectionSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteAccessControlGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteActionLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteActionSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteAddressUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteAppealBudgetDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteAppealBudgetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteAppealResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteAppointmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteBatchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCampaignAppealResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCampaignCostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCampaignResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCampaignRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCampaignSegmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCampaignSupplierResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCollectionBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCollectionPISResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCollectionPointResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCollectionRegionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCollectionResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCollectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCollectorShiftResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCommunicationsLogLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCommunicationsLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCommunicationsLogSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCommunicationsNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCommunicationUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactCPDCycleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactCPDPointsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactFundraisingEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactIncentivesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactMailingDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteContactSurveyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCpdObjectiveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCriteriaSetDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCriteriaSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCustomFormDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteCustomisedDisplayListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteDelegateActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteDelegateLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteDisplayListItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteDuplicateContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteDuplicateSystemModuleUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEnclosuresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEntityAlertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventBookingOptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventCostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventDelegateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventFinancialLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventMailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventOptionSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventOrganiserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventOwnerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventPersonnelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventPersonnelTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventPISResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventRoomBlockBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventSessionActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventSessionTestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventSessionTestResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventSourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventSubmissionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteEventVenueBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteExternalDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteExternalReferenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteFastDataEntryControlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteFastDataEntryPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteFundraisingPaymentScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteFundraisingRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteFutureMembershipTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteGiftAidDeclarationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteH2hCollectorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteHistoryItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteInactiveSystemModuleUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteJobScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteLegacyBequestForecastResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteLegacyBequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteLegacyExpenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteLegacyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteLegacyTaxCertificateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteMailingSelectionSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteMannedCollectorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteMeetingDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteMeetingLinksResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteMeetingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeletePositionActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeletePositionLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeletePositionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteProvisionalTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteReportAndContentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteReportControlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteReportItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteReportParameterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteReportSectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteSegmentCostCentreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteSegmentProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteSelectedContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteSelectionSetContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteSelectionSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteSelectionStepsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteStandardDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteStickyNoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteSuppressionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteTableMaintenanceDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteTickBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteTraderApplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteTraderApplicationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DeleteXmlDataItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DuplicateEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DuplicateReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DuplicateReportSectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.DuplicateSurveyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ExportCustomFormResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ExportReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ExportTraderApplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindActionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindAppealCollectionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindBatchesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindCampaignAppealsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindCampaignCollectionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindCampaignSegmentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindCampaignsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindContactMailingDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindContactsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindCovenantsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindCreditCardAuthoritiesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindDirectDebitsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindDuplicateContactsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindDuplicateOrganisationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindEventPersonnelAppointmentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindEventPersonnelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindFundraisingPaymentScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindGiftAidDeclarationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindInternalResourcesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindInUniservPhoneBookResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindInvoiceCreditNotesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindLegaciesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindMailingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindMembersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindOrganisationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindPaymentPlansResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindPayrollGivingPledgesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindPostTaxPayrollGivingPledgesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindPreTaxPayrollGivingPledgesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindProductsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindPurchaseOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindSelectionSetsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindStandardDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindStandingOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindTextResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindTransactionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.FindVenueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetActionScheduleDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetAllPAFAddressesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetApplicationControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetAutoPaymentTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetAvailableDatabasesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetBatchTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetBranchFromPostCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetClientCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetCriteriaVariableControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetCustomisedDisplayListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetDetailBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetDocumentFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetDocumentMergeDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetDocumentNumberForDistributionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetFastDataEntryControlItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetFastDataEntryModuleDefaultsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetFDEControlTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetFinancialAdjustmentTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetFinderControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetFunctionControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetImportTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetLookupDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMailingDocumentMergeFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMailingDocumentParagraphsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMailingRelevantMembersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMailingSelectedContactsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMailingSelectionCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMailingSelectionRoughCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMailingTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMaintenanceControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMaintenanceDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMDPDocumentInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMemberBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMemberRenewalAmountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetMembershipEntitlementsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetModifierPriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetNearestOrganisationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetNextPaymentDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetOwnershipDepartmentInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetOwnershipGroupInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetOwnershipUserInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetOwnershipUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetPAFAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetPAFPostcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetPaymentPlanAutoPayDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetPaymentPlanDetailTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetProcessStockMovementTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportControlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportOutputResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportParametersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportSectionDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportSectionDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetReportVersionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetStandardDocumentFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetSuppressContactsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetSurnamePrefixResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetTableMaintenanceControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetTraderApplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetTraderPageTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetVersionNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetWebControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetWebInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetWebMenusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetWebPageInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.GetWebPageItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ImportTraderAppInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.InitCustomFormsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.InitDataImportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.InitListManagerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.InitMailSortDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.LockDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.LoginRegisteredUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.LogoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.MakeBranchHistoricalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.MergeAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.MergeContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.MoveBranchPostcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.MovePositionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.MoveRegionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessBulkEMailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessJobResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessListManagerMailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessListManagerStepResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessMailingCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessMailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessMailingSelectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessPaymentPlanMenuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessProductNumberAllocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessStockMovementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessTraderDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessTraderMailmergeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ProcessTraderPPEligibleForGiftAidResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ReconcileStandingOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ReissueChequeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.RenumberEventCandidatesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.RenumberReportItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.RenumberReportParametersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.RenumberReportSectionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.RenumberSessionBookingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ResubmitJobScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.ReverseTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SaveListManagerSelectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SaveTraderApplicationBankResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SaveTraderApplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectActionDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectAddressDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectAppointmentDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectBankAccountDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectCampaignDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectConfigValueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectContactDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectCovenantDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectCriteriaSetStepsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectDashboardDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectDelegateDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectDirectDebitDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectDocumentDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectEventDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectExternalDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectFastDataEntryDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectFinancialProcessingDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectFundraisingEventDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectFundraisingRequestDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectGiftAidDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectJobProcessorsDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectJobScheduleDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectJournalDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectLegacyBequestDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectListManagerCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectListManagerDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectMembershipDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectPaymentPlanDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectPledgeDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectPurchaseInvoiceDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectPurchaseOrderDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectSelectionSetAppointmentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectSelectionSetCommsNumbersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectSelectionSetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectSystemModuleUsersDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectTableDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectTelemarketingContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectTransactionDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SelectUserHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SetConfigResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SetMailingDocumentFulfilmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.SetTraderApplicationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.TerminateListManagerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.TransferWaitingListBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UniservPostCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAccessControlItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAccommodationBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateActionLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAddressUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAppealBudgetDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAppealBudgetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAppealResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAppointmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateAppropriateCertificateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateBankersOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateBatchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCampaignAppealResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCampaignCostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCampaignResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCampaignRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCampaignSegmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCampaignSupplierResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCollectionBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCollectionPISResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCollectionPointResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCollectionResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCollectorShiftResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCommunicationsLogLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCommunicationsLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCommunicationsLogSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCommunicationsNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCommunicationsNumbersAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCommunicationUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactCPDCycleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactCPDPointsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactFundraisingEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactMailingDocumentFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactSurveyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateContactSurveyResponsesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCpdObjectiveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCreditCardAuthorityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCreditCardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCreditCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCriteriaSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateCustomFormDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateDelegateActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateDelegateLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateDepartmentNotesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateDespatchNoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateDirectDebitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateDocumentFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateDuplicateContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEntityAlertItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEntityAlertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventBookingOptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventBookingTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventCostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventDelegateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventLoanItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventOptionSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventOrganiserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventPersonnelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventPersonnelTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventPISResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventRoomAllocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventRoomBlockBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventSessionTestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventSessionTestResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventSubjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventSubmissionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateEventVenueBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateExternalDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateExternalReferenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFastDataEntryPageAccessLevelsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFastDataEntryPageItemControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFastDataEntryPageItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFastDataEntryPageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFastDataEntryUserControlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFinancialHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFinderControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFundraisingPaymentScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFundraisingRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateFutureMembershipTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateGiftAidDeclarationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateH2HCollectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateH2hCollectorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateHistoryItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateLegacyBequestForecastResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateLegacyBequestReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateLegacyBequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateLegacyExpenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateLegacyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateLegacyTaxCertificateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMailingContactAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMailingDocumentFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMailingHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMailingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMailingSelectionSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMaintenanceControlsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMaintenanceTablesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMannedCollectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMannedCollectorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMeetingLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMeetingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateMembershipGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePaymentPlanInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePaymentPlanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePickingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePositionActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePositionLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePositionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePostTaxPledgeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePreTaxPledgeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateProvisionalTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePurchaseOrderPaymentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdatePurchaseOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateRegisteredUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateSegmentCostCentreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateSegmentProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateSelectionSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateStandardDocumentFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateStandardDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateStandingOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateStickyNoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateSubscriptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateSuppressionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateSystemModuleUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateTableDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateTableMaintenanceDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateTableNoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateTelemarketingContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateTickBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateUnmannedCollectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateWebDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\CARECustomerPortalExtensions.CareWebServices.UpdateWebItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CareWebServices\NDataAccess.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CareWebServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CareWebServices\NDataAccess.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CareWebServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CareWebServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CareWebServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCOPY "$(ProjectDir)bin\debug\CARECustomerPortalExtensions.dll" "d:\inetpub\umbraco-fsc\bin\plugins\" /s /y/
+XCOPY "$(ProjectDir)bin\debug\CARECustomerPortalExtensions.pdb" "d:\inetpub\umbraco-fsc\bin\plugins\" /s /y/</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
