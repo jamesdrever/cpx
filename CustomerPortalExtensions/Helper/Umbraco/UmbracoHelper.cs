@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Web;
 using Examine;
 using umbraco;
 using umbraco.interfaces;
-using Examine.SearchCriteria;
-using UmbracoExamine;
 
 namespace CustomerPortalExtensions.Helper.Umbraco
 {

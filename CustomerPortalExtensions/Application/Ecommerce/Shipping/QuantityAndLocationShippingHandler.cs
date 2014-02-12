@@ -1,5 +1,4 @@
 ﻿using System;
-using CustomerPortalExtensions.Domain;
 using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Interfaces.ECommerce;
 using CustomerPortalExtensions.Domain.ECommerce;
@@ -18,13 +17,13 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Shipping
                 order.ShippingTotal = 0;
                 return order;
             }
-                
+
             //default country to UK if not specified
             string country = (String.IsNullOrEmpty(contact.Country)) ? "United Kingdom" : contact.Country;
 
-            decimal total = (decimal)order.PaymentSubTotalIncludingDiscountAndVoucher;
+            decimal total = (decimal) order.PaymentSubTotalIncludingDiscountAndVoucher;
             order.ShippingInfo = "Shipping based on delivery to " + country;
-            if (country == "United Kingdom - Mainland"||country=="United Kingdom"||country=="UK")
+            if (country == "United Kingdom - Mainland" || country == "United Kingdom" || country == "UK")
             {
                 if (total > 0 && total <= (decimal) 6.50)
                 {
@@ -33,7 +32,7 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Shipping
                 }
                 if (total <= 15 && total > 6)
                 {
-                    order.ShippingTotal=2;
+                    order.ShippingTotal = 2;
                     return order;
                 }
                 if (total <= 30 && total > 15)
@@ -43,12 +42,12 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Shipping
                 }
                 if (total <= 100 && total > 30)
                 {
-                    order.ShippingTotal=5;
+                    order.ShippingTotal = 5;
                     return order;
                 }
                 if (total <= 150 && total > 100)
                 {
-                    order.ShippingTotal=8;
+                    order.ShippingTotal = 8;
                     return order;
                 }
                 order.ShippingTotal = 0;
@@ -63,12 +62,12 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Shipping
             £100.01-£150 - £12 
             £150.05 and over - £15
             */
-            if (country == "United Kingdom - Islands"||country=="UKI")
+            if (country == "United Kingdom - Islands" || country == "UKI")
             {
 
-                if (total > 0 && total <= (decimal)6.50)
+                if (total > 0 && total <= (decimal) 6.50)
                 {
-                    order.ShippingTotal=1;
+                    order.ShippingTotal = 1;
                     return order;
                 }
                 if (total <= 15 && total > 6)
@@ -94,31 +93,29 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Shipping
                 order.ShippingTotal = 15;
                 return order;
             }
-            else
+            if (total > 0 && total <= 15)
             {
-                if (total > 0 && total <= 15)
-                {
-                    order.ShippingTotal = 4;
-                    return order;
-                }
-                if (total <= 30 && total > 15)
-                {
-                    order.ShippingTotal = 7;
-                    return order;
-                }
-                if (total <= 75 && total > 30)
-                {
-                    order.ShippingTotal = 15;
-                    return order;
-                }
-                if (total <= 150 && total > 75)
-                {
-                    order.ShippingTotal = 20;
-                    return order;
-                }
-                order.ShippingTotal = 25;
+                order.ShippingTotal = 4;
                 return order;
             }
+            if (total <= 30 && total > 15)
+            {
+                order.ShippingTotal = 7;
+                return order;
+            }
+            if (total <= 75 && total > 30)
+            {
+                order.ShippingTotal = 15;
+                return order;
+            }
+            if (total <= 150 && total > 75)
+            {
+                order.ShippingTotal = 20;
+                return order;
+            }
+            order.ShippingTotal = 25;
+            return order;
+
         }
 
         #endregion

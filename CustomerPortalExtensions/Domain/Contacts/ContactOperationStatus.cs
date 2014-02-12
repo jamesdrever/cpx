@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using CustomerPortalExtensions.Domain.Contacts;
-using CustomerPortalExtensions.Domain.Operations;
+﻿using CustomerPortalExtensions.Domain.Operations;
 
-namespace CustomerPortalExtensions.Domain
+namespace CustomerPortalExtensions.Domain.Contacts
 {
     public class ContactOperationStatus : OperationStatus
     {

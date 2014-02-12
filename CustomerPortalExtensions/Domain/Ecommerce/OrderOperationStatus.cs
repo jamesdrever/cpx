@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using CustomerPortalExtensions.Domain.ECommerce;
+﻿using System.Collections.Generic;
 using CustomerPortalExtensions.Domain.Operations;
 
 namespace CustomerPortalExtensions.Domain.ECommerce

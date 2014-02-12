@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using CustomerPortal.Infrastructure.Services;
 using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Domain.Operations;
-using CustomerPortalExtensions.Domain;
+using CustomerPortalExtensions.Infrastructure.Services.AutoMapper;
 using CustomerPortalExtensions.Interfaces.Contacts;
-using CustomerPortalExtensions.Interfaces.ECommerce;
 using CustomerPortalExtensions.Interfaces.Synchronisation;
 using Omu.ValueInjecter;
 
@@ -17,12 +15,10 @@ namespace CustomerPortalExtensions.Application.Contacts
         private readonly IContactRepository _contactRepository;
         private readonly IContactSecondaryRepository _secondaryContactRepository;
         private readonly IContactSynchroniser _contactSynchroniser;
-        private readonly IOrderRepository _orderRepository;
 
         public ContactService(IContactAuthenticationHandler authenticationHandler,IContactRepository contactRepository, 
             IContactSecondaryRepository secondaryContactRepository,
-            IContactSynchroniser contactSynchroniser,
-            IOrderRepository orderRepository
+            IContactSynchroniser contactSynchroniser
             )
         {
             if (contactRepository == null)
@@ -47,8 +43,6 @@ namespace CustomerPortalExtensions.Application.Contacts
                 throw new ArgumentNullException("contactSynchroniser");
             }
             _contactSynchroniser = contactSynchroniser;
-            if (orderRepository == null) throw new ArgumentNullException("orderRepository");
-            _orderRepository = orderRepository;
         }
 
         #region Authentication
@@ -233,7 +227,7 @@ namespace CustomerPortalExtensions.Application.Contacts
         }
 
 
-        public List<CustomerPortal.Domain.Contacts.Country> GetCountries()
+        public List<Country> GetCountries()
         {
             return _contactSynchroniser.GetCountries();
         }

@@ -1,8 +1,5 @@
 ﻿using System.Collections.Generic;
-using CustomerPortal.Domain.Contacts;
-using CustomerPortalExtensions.Domain;
 using CustomerPortalExtensions.Domain.Contacts;
-using CustomerPortalExtensions.Domain.Membership;
 
 namespace CustomerPortalExtensions.Interfaces.Contacts
 {
@@ -19,22 +16,13 @@ namespace CustomerPortalExtensions.Interfaces.Contacts
         ContactAuthenticationOperationStatus AuthenticateWithEmailAddress(string email, string password);
         bool IsCurrentUserLoggedIn();
         void LogOff();
-        
+        List<ContactTitle> GetContactTitles();
+        List<Country> GetCountries();
+
         //TODO: where does this sit??
         /**
         MembershipOperationStatus CreateMembership(Membership membership);
         **/
-        List<ContactTitle> GetContactTitles();
-        List<Country> GetCountries();
 
-
-        /**
-        string GetDeliveryCountry();
-        bool IsUniqueUserName(string UserName);
-        bool IsUniqueEmail(string Email);
-        
-        Contact GetContact(string UserName);
-        Contact GetContact(int UserID);
-         **/
     }
 }

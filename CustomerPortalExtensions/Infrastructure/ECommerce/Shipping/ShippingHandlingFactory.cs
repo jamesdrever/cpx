@@ -1,7 +1,6 @@
-﻿using System;
-using CustomerPortalExtensions.Application.Ecommerce.Shipping;
+﻿using CustomerPortalExtensions.Application.Ecommerce.Shipping;
 using CustomerPortalExtensions.Interfaces.ECommerce;
-using CustomerPortalExtensions.Interfaces.Config;
+
 
 namespace CustomerPortalExtensions.Infrastructure.ECommerce.Shipping
 {

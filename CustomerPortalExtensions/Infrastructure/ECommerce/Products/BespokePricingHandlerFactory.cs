@@ -1,5 +1,4 @@
 ﻿using CustomerPortalExtensions.Application.Ecommerce.Pricing;
-using CustomerPortalExtensions.Application.Ecommerce.Shipping;
 using CustomerPortalExtensions.Interfaces.ECommerce;
 using CustomerPortalExtensions.Interfaces.Ecommerce;
 

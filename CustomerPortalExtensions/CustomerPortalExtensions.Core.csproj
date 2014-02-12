@@ -257,7 +257,6 @@
     <Compile Include="Application\Ecommerce\Discounts\QuantityDiscountHandler.cs" />
     <Compile Include="Application\Email\EmailSubscriptionsService.cs" />
     <Compile Include="Application\Ecommerce\OrderQueue\OrderQueueService.cs" />
-    <Compile Include="Application\Twitter\TwitterExtensions.cs" />
     <Compile Include="Config\CustomerPortalSection.cs" />
     <Compile Include="Domain\Contacts\ContactAuthenticationOperationStatus.cs" />
     <Compile Include="Domain\Ecommerce\Location.cs" />
@@ -279,7 +278,6 @@
     <Compile Include="Domain\Membership\MembershipOperationStatus.cs" />
     <Compile Include="Domain\Membership\MembershipType.cs" />
     <Compile Include="Domain\Operations\OperationStatus.cs" />
-    <Compile Include="Domain\Social Networking\Tweet.cs" />
     <Compile Include="Domain\Synchronisation\QueuedContact.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -305,8 +303,7 @@
     <Compile Include="Infrastructure\ECommerce\Shipping\ShippingHandlingFactory.cs" />
     <Compile Include="Infrastructure\ECommerce\Vouchers\VoucherRepository.cs" />
     <Compile Include="Infrastructure\Email\MailChimpEmailNewsletterConnector.cs" />
-    <Compile Include="Infrastructure\Services\IgnoreNulls.cs" />
-    <Compile Include="Infrastructure\Synchronisation\CareContactSynchroniser.cs" />
+    <Compile Include="Infrastructure\Services\AutoMapper\IgnoreNulls.cs" />
     <Compile Include="Infrastructure\Synchronisation\DefaultContactSynchronisation.cs" />
     <Compile Include="Interfaces\Config\IConfigurationService.cs" />
     <Compile Include="Interfaces\Config\ICustomerPortalConfiguration.cs" />
@@ -2324,10 +2321,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helper\Services\" />
     <Folder Include="Infrastructure\Membership\" />
     <Folder Include="Interfaces\Membership\" />
-    <Folder Include="Interfaces\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

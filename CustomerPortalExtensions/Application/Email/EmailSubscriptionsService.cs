@@ -19,27 +19,25 @@ namespace CustomerPortalExtensions.Application.Email
     {
         private readonly IEmailSubscriptionConnector _emailSubscriptionConnector;
         private readonly IContactService _contactService;
-        private readonly IConfigurationService _config;
 
         public EmailSubscriptionsService(IEmailSubscriptionConnector emailSubscriptionConnector, IContactService contactService, IConfigurationService config)
         {
             if (emailSubscriptionConnector == null)
             {
-                throw new ArgumentNullException("emailNewsletterConnector");
+                throw new ArgumentNullException("emailSubscriptionConnector");
             }
-            emailSubscriptionConnector.SetApiKey(config.GetConfiguration().EmailNewsletterAPIKey);
-            emailSubscriptionConnector.SetListId(config.GetConfiguration().EmailNewsletterListID);
-            this._emailSubscriptionConnector = emailSubscriptionConnector;
             if (config == null)
             {
                 throw new ArgumentNullException("config");
             }
-            this._config = config;
             if (contactService == null)
             {
                 throw new ArgumentNullException("contactService");
             }
-            this._contactService = contactService;
+            emailSubscriptionConnector.SetApiKey(config.GetConfiguration().EmailNewsletterAPIKey);
+            emailSubscriptionConnector.SetListId(config.GetConfiguration().EmailNewsletterListID);
+            _emailSubscriptionConnector = emailSubscriptionConnector;
+            _contactService = contactService;
         }
 
 

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using CustomerPortalExtensions.Domain.ECommerce;
 
 namespace CustomerPortalExtensions.Interfaces.ECommerce

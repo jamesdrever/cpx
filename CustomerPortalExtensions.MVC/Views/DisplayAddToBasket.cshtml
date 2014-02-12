@@ -1,0 +1,11 @@
+﻿@model CustomerPortalExtensions.MVC.Models.Ecommerce.ProductSummaryViewModel
+
+<link rel="stylesheet" href="~/css/CPXOrder.css"/>
+<form action="/umbraco/customerportal/ECommerceSurface/AddProductToOrderWithRedirect/" method="post">
+	<input type="hidden" id="productId" name="productId" value="@productId" />
+	<p>Why not add an @Model.Title to your basket?</p>
+	<input type="hidden" id="url" name="url" value="@Model.OrderPage" />	
+	<input type="submit" value="Add" />
+</form>
+<br style="clear:left;" />
+

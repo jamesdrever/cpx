@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CustomerPortalExtensions.Domain
+namespace CustomerPortalExtensions.Domain.Contacts
 {
     public class ContactPreferences
     {

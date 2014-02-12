@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Configuration;
-using System.Linq;
 using CustomerPortalExtensions.Domain.Ecommerce;
 using CustomerPortalExtensions.Domain.Operations;
 using CustomerPortalExtensions.Helper.Umbraco;
 using CustomerPortalExtensions.Interfaces.Config;
 using CustomerPortalExtensions.Interfaces.Ecommerce;
 using Examine;
-using umbraco.NodeFactory;
 
 namespace CustomerPortalExtensions.Infrastructure.ECommerce.Vouchers
 {

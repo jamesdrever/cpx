@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using CustomerPortalExtensions.Interfaces.Ecommerce;
 using Examine;
-using UmbracoExamine;
 using CustomerPortalExtensions.Domain.Ecommerce;
 
 namespace CustomerPortalExtensions.Application.Ecommerce.Locations
 {
     public class FamilyLocationHandler : ILocationHandler
     {
+        private const string SearchProvider = "FamilyLocationsSearcher";
+        private const string NodeTypeAlias = "FAMLocationPage";
         public Location GetLocation(string locationCode)
         {
 
 
-            const string searchProvider = "FamilyLocationsSearcher";
-            const string nodeTypeAlias = "FAMLocationPage";
 
-            var locationSearcher = ExamineManager.Instance.SearchProviderCollection[searchProvider];
+
+            var locationSearcher = ExamineManager.Instance.SearchProviderCollection[SearchProvider];
             var locationSearchCriteria = locationSearcher.CreateSearchCriteria();
             var locationQuery = locationSearchCriteria.Field("locationName", locationCode);
             var locationSearchResults = locationSearcher.Search(locationQuery.Compile());
@@ -37,13 +35,11 @@ namespace CustomerPortalExtensions.Application.Ecommerce.Locations
 
         public List<Location> GetLocations()
         {
-            const string searchProvider = "FamilyLocationsSearcher";
-            const string nodeTypeAlias = "FAMLocationPage";
             var locationList = new List<Location>();
 
-            var locationSearcher = ExamineManager.Instance.SearchProviderCollection[searchProvider];
+            var locationSearcher = ExamineManager.Instance.SearchProviderCollection[SearchProvider];
             var locationSearchCriteria = locationSearcher.CreateSearchCriteria();
-            var locationQuery = locationSearchCriteria.NodeTypeAlias(nodeTypeAlias);
+            var locationQuery = locationSearchCriteria.NodeTypeAlias(NodeTypeAlias);
             var locationSearchResults = locationSearcher.Search(locationQuery.Compile());
 
             foreach (var location in locationSearchResults)

@@ -1,7 +1,5 @@
-﻿using System;
-using CustomerPortalExtensions.Application.Ecommerce.Locations;
+﻿using CustomerPortalExtensions.Application.Ecommerce.Locations;
 using CustomerPortalExtensions.Interfaces.ECommerce;
-using CustomerPortalExtensions.Interfaces.Config;
 using CustomerPortalExtensions.Interfaces.Ecommerce;
 
 namespace CustomerPortalExtensions.Infrastructure.ECommerce.Location

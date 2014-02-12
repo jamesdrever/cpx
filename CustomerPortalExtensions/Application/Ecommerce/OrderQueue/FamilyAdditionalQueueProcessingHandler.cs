@@ -2,7 +2,6 @@
 using System.Text;
 using CustomerPortalExtensions.Domain.ECommerce;
 using CustomerPortalExtensions.Interfaces.ECommerce;
-using CustomerPortalExtensions.Interfaces.Ecommerce;
 
 namespace CustomerPortalExtensions.Application.Ecommerce.OrderQueue
 {
