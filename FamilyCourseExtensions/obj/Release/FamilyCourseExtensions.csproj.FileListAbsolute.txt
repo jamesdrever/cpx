@@ -56,6 +56,7 @@ C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\Fa
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\FamilyCourseExtensions\bin\businesslogic.xml
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\FamilyCourseExtensions\bin\controls.xml
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\FamilyCourseExtensions\bin\umbraco.DataLayer.xml
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\FamilyCourseExtensions\bin\FamilyCourseExtensions.dll.config
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\FamilyCourseExtensions\bin\CookComputing.XmlRpcV2.dll
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\FamilyCourseExtensions\bin\umbraco.providers.dll
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\FamilyCourseExtensions\bin\UmbracoExamine.dll

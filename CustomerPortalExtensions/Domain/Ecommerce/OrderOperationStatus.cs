@@ -10,6 +10,12 @@ namespace CustomerPortalExtensions.Domain.ECommerce
         public bool OrderLineDeleted { get; set; }
     }
 
+
+    public class OrderSummaryOperationStatus : OperationStatus
+    {
+        public OrderSummary OrderSummary { get; set; }
+    }
+
     public class OrdersOperationStatus : OperationStatus
     {
         public List<Order> Orders { get; set; }

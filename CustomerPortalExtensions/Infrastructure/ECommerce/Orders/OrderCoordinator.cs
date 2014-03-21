@@ -66,7 +66,31 @@ namespace CustomerPortalExtensions.Infrastructure.ECommerce.Orders
                 orderOperationStatus.Order = GetOrderConfiguration(orderOperationStatus.Order);
             }
             return orderOperationStatus;
+        }
 
+        public OrderSummaryOperationStatus GetOrderSummary(int orderId)
+        {
+            var orderSummaryOperationStatus = new OrderSummaryOperationStatus();
+            var orderOperationStatus = _orderRepository.GetOrder(orderId);
+
+            if (orderOperationStatus.Status)
+            {
+                orderOperationStatus.Order = GetOrderConfiguration(orderOperationStatus.Order);
+                var orderSummary = new OrderSummary();
+                orderSummary.NumberOfItems = orderOperationStatus.Order.NumberOfItems;
+                orderSummary.OrderId = orderOperationStatus.Order.OrderId;
+                orderSummary.PaymentTotal = string.Format("{0:C}",orderOperationStatus.Order.PaymentTotal);
+                orderSummary.ProductSubTotal = string.Format("{0:C}",orderOperationStatus.Order.ProductSubTotal);
+                orderSummary.Status = orderOperationStatus.Order.Status;
+                orderSummaryOperationStatus.OrderSummary = orderSummary;
+                orderSummaryOperationStatus.Status = true;
+            }
+            else
+            {
+                orderSummaryOperationStatus.Message = orderOperationStatus.Message;
+                orderSummaryOperationStatus.Status = false;
+            }
+            return orderSummaryOperationStatus;
         }
 
         public Order UpdateOrderWithShippingAndDiscounts(Order order, Contact contact)

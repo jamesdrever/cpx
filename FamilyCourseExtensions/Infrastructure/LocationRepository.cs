@@ -16,7 +16,7 @@ namespace FamilyCourseExtensions.Infrastructure
 
             var locationSearcher = ExamineManager.Instance.SearchProviderCollection[searchProvider];
             var locationSearchCriteria = locationSearcher.CreateSearchCriteria();
-            var locationQuery = locationSearchCriteria.NodeTypeAlias(nodeTypeAlias);
+            var locationQuery = locationSearchCriteria.Field("bookingStatus","O");
             var locationSearchResults = locationSearcher.Search(locationQuery.Compile());
 
             foreach (var location in locationSearchResults)

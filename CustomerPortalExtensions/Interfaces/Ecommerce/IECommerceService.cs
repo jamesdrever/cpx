@@ -7,6 +7,7 @@ namespace CustomerPortalExtensions.Interfaces.ECommerce
     {
         OrderOperationStatus GetOrder();
         OrderOperationStatus GetOrder(int orderIndex);
+        OrderSummaryOperationStatus GetOrderSummaryById(int orderId);
         OrderOperationStatus AddProductToOrder(int productId, int quantity);
         OrderOperationStatus AddProductToOrder(int productId, int optionId, int quantity, string paymentType);
         OrderOperationStatus AddCourseWithFlexibleDatesToOrder(int productId, int optionId, DateTime startDate, DateTime finishDate, int quantity, string paymentType);        

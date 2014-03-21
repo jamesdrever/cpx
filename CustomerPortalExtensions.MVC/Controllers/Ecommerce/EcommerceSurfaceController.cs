@@ -26,11 +26,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         }
 
 
-        public ActionResult DisplayAddCurrentCourseToBasket()
-        {
-            return PartialView("DisplayAddProductToBasket", GetCurrentProductViewModel());
-        }
-
+        
 
         private ProductViewModel GetCurrentProductViewModel()
         {
@@ -78,13 +74,46 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
             return PartialView("DisplayPrintableOrder", GetOrderViewModel());
         }
 
+        public ActionResult GetOrderSummary(string partialViewName)
+        {
+            OrderSummaryOperationStatus operationSummaryOperationStatus;
+            var orderSummaryViewModel = new OrderSummaryViewModel();
+            int orderId = 0;
+            if (Request.QueryString["OrderId"] != null)
+            {
+                Int32.TryParse(Request.QueryString["OrderId"], out orderId);
+                if (orderId > 0)
+                {
+                    operationSummaryOperationStatus = _ecommerceService.GetOrderSummaryById(orderId);
+                    if (operationSummaryOperationStatus.Status)
+                    {
+                        orderSummaryViewModel.InjectFrom(operationSummaryOperationStatus.OrderSummary);
+                    }
+                    orderSummaryViewModel.Status = operationSummaryOperationStatus.Status;
+                    orderSummaryViewModel.FullErrorDetails = operationSummaryOperationStatus.FullErrorDetails;
+                }
+                orderSummaryViewModel.Status = false;
+                orderSummaryViewModel.FullErrorDetails = "An valid order number has not been specified.";
+            }
+            else
+            {
+                orderSummaryViewModel.Status = false;
+                orderSummaryViewModel.FullErrorDetails = "An order has not been specified.";
+            }
+
+
+
+            return PartialView(partialViewName,orderSummaryViewModel);
+        }
+
         private OrderViewModel GetOrderViewModel()
         {
+
             int orderIndex = 1;
             if (CurrentPage.GetProperty("orderIndex") != null)
                 Int32.TryParse(CurrentPage.GetProperty("orderIndex").Value.ToString(), out orderIndex);
 
-            OrderOperationStatus operationStatus = _ecommerceService.GetOrder(orderIndex);
+            var operationStatus = _ecommerceService.GetOrder(orderIndex);
 
             var viewOrder = new OrderViewModel();
 
@@ -118,7 +147,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         public JsonResult AddProductAndQuantityToOrderJson(int productId, int quantity)
         {
             OrderOperationStatus operationStatus = _ecommerceService.AddProductToOrder(productId, quantity);
-            return Json(GetOrderSummary(operationStatus), JsonRequestBehavior.AllowGet);
+            return Json(GetOrderResultSummary(operationStatus), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult AddProductAndQuantityToOrder(int productId, int quantity, string url)
@@ -155,7 +184,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         public JsonResult AddProductAndSpecifiedPaymentToOrderJson(int productId,int optionId, int quantity, string paymentType)
         {
             OrderOperationStatus operationStatus = _ecommerceService.AddProductToOrder(productId, optionId, quantity,paymentType);
-            return Json(GetOrderSummary(operationStatus), JsonRequestBehavior.AllowGet);
+            return Json(GetOrderResultSummary(operationStatus), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult AddProductAndSpecifiedPaymentToOrder(int productId, int optionId, int quantity, string paymentType, string url)
@@ -180,7 +209,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         public JsonResult UpdateOrderLineJson(int productId, int optionId, int quantity)
         {
             OrderOperationStatus operationStatus = _ecommerceService.Update(productId, optionId,quantity);
-            return Json(GetOrderSummary(operationStatus), JsonRequestBehavior.AllowGet);
+            return Json(GetOrderResultSummary(operationStatus), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult UpdateOrderLine(int productId, int optionId, int quantity)
@@ -192,7 +221,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         public JsonResult UpdateOrderLineWithSpecifiedPaymentJson(int productId, int optionId, int newOptionId, int quantity, string paymentType)
         {
             OrderOperationStatus operationStatus = _ecommerceService.Update(productId,optionId,newOptionId, quantity, paymentType);
-            return Json(GetOrderSummary(operationStatus), JsonRequestBehavior.AllowGet);
+            return Json(GetOrderResultSummary(operationStatus), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult UpdateOrderLineWithSpecifiedPayment(int productId, int optionId, int newOptionId, int quantity, string paymentType)
@@ -211,7 +240,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         public JsonResult RemoveFromOrderJson(int productId, int optionId)
         {
             OrderOperationStatus operationStatus = _ecommerceService.Remove(productId,optionId);
-            return Json(GetOrderSummary(operationStatus), JsonRequestBehavior.AllowGet);
+            return Json(GetOrderResultSummary(operationStatus), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult RemoveFromOrder(int productId, int optionId)
@@ -223,7 +252,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         public JsonResult UpdateSpecialRequirementsJson(string specialRequirements,int orderIndex)
         {
             OrderOperationStatus operationStatus = _ecommerceService.UpdateSpecialRequirements(specialRequirements,orderIndex);
-            return Json(GetOrderSummary(operationStatus), JsonRequestBehavior.AllowGet);
+            return Json(GetOrderResultSummary(operationStatus), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult UpdateSpecialRequirements(string specialRequirements, int orderIndex)
@@ -242,7 +271,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         public JsonResult AddVoucherToOrderJson(string voucherCode)
         {
             OrderOperationStatus operationStatus = _ecommerceService.AddVoucherToOrder(voucherCode);
-            return Json(GetOrderSummary(operationStatus), JsonRequestBehavior.AllowGet);
+            return Json(GetOrderResultSummary(operationStatus), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult AddVoucherToOrder(string voucherCode)
@@ -262,13 +291,20 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
         }
 
 
-        public ActionResult DisplayAddProductToBasket(int productId)
+        public ActionResult DisplayAddProductToBasket(int productId, string content, string buttonContent)
         {
             ProductSummaryOperationStatus operationStatus = _ecommerceService.GetProductSummary(productId);
             var viewProduct = new ProductSummaryViewModel();
             viewProduct.InjectFrom(operationStatus.Product);
             viewProduct.OrderPage = operationStatus.OrderPage;
+            viewProduct.Content = content;
+            viewProduct.ButtonContent = buttonContent;
             return PartialView("DisplayAddProductToBasket", viewProduct);
+        }
+
+        public ActionResult DisplayAddCurrentCourseToBasket()
+        {
+            return PartialView("DisplayAddProductToBasket", GetCurrentProductViewModel());
         }
 
         public ActionResult DisplayAddDonationToBasket(int productId)
@@ -289,7 +325,7 @@ namespace CustomerPortalExtensions.MVC.Controllers.Ecommerce
             return PartialView("DisplayAddFlexibleDonationToBasket", viewProduct);
         }
 
-        private OrderResultSummary GetOrderSummary(OrderOperationStatus operationStatus)
+        private OrderResultSummary GetOrderResultSummary(OrderOperationStatus operationStatus)
         {
             var resultSummary=new OrderResultSummary();
             

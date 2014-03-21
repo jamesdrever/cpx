@@ -87,3 +87,4 @@ C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\Cu
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.MVC\bin\umbraco.MacroEngines.xml
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.MVC\bin\umbraco.macroRenderings.xml
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.MVC\bin\umbraco.webservices.xml
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions.MVC\bin\CustomerPortalExtensions.MVC.dll.config

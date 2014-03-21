@@ -13,6 +13,7 @@ namespace CustomerPortalExtensions.Interfaces.Synchronisation
        ContactOperationStatus GetContact(int externalContactNumber);
        List<ContactTitle> GetContactTitles();
        List<Country> GetCountries();
+       Country GetCountry(string countryCode);
        MembershipOperationStatus CreateMembership(Membership membership);
        ContactPreferencesOperationStatus GetContactPreferences(int externalContactNumber);
        ContactPreferencesOperationStatus GetCurrentContactPreferences(int externalContactNumber);

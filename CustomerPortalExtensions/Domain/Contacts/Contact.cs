@@ -24,6 +24,8 @@ namespace CustomerPortalExtensions.Domain.Contacts
         public string County { get; set; }
         public string Postcode { get; set; }
         public string Country { get; set; }
+        [Ignore]
+        public string CountryDesc { get; set; }
         public bool SeparateDeliveryAddress { get ; set;  }
         public string DeliveryAddress1 { get ; set;  }
         public string DeliveryAddress2 { get ; set;  }
@@ -32,6 +34,8 @@ namespace CustomerPortalExtensions.Domain.Contacts
         public string DeliveryCounty { get ; set;  }
         public string DeliveryPostcode { get ; set;  }
         public string DeliveryCountry { get; set; }
+        [Ignore]
+        public string DeliveryCountryDesc { get; set; }
         public string Email { get ; set;  }
         public string Telephone { get ; set;  }
         public string Mobile { get ; set;  }

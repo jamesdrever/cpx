@@ -14,44 +14,53 @@ namespace CustomerPortalExtensions.Domain.ECommerce
     //can leave it there..
     [TableName("cpxOrder")]
     [PrimaryKey("OrderId")]
-    public class Order 
+    public class Order
     {
-       public Order()
-       {
-           Status = "PROV";
-           DiscountTotal = 0;
-           ShippingTotal = 0;
-           VoucherAmount = 0;
-           VoucherPerItemAmount = 0;
-           VoucherPercentage = 0;
-           VoucherId = 0;
-           VoucherCategoryFilter = "";
-           OrderCreated = DateTime.Now;
-           OrderLines = new List<OrderLine>();
-           GiftAidAgreement = false;
-       }
+        public Order()
+        {
+            Status = "PROV";
+            DiscountTotal = 0;
+            ShippingTotal = 0;
+            VoucherAmount = 0;
+            VoucherPerItemAmount = 0;
+            VoucherPercentage = 0;
+            VoucherId = 0;
+            VoucherCategoryFilter = "";
+            OrderCreated = DateTime.Now;
+            OrderLines = new List<OrderLine>();
+            GiftAidAgreement = false;
+        }
 
 
 
         public int OrderId { get; set; }
+
         [Ignore]
         public string Description { get; set; }
-        public int OrderIndex { get; set;  }
+
+        public int OrderIndex { get; set; }
         public int ContactId { get; set; }
         public string UserId { get; set; }
         public string UserName { get; set; }
         public string SpecialRequirements { get; set; }
         public string Status { get; set; }
-        public DateTime OrderCreated { get; set;  }
+        public DateTime OrderCreated { get; set; }
+
         [Ignore]
         public int NumberOfItems
         {
             get { return CurrentOrderLines == null ? 0 : CurrentOrderLines.Sum(i => i.Quantity); }
         }
+
         [Ignore]
         public int NumberOfItemsExcludingDonations
         {
-            get { return CurrentOrderLines == null ? 0 : CurrentOrderLines.Where(i=>i.PaymentType!="DON").Sum(i => i.Quantity); }
+            get
+            {
+                return CurrentOrderLines == null
+                    ? 0
+                    : CurrentOrderLines.Where(i => i.PaymentType != "DON").Sum(i => i.Quantity);
+            }
         }
 
         [Ignore]
@@ -59,18 +68,27 @@ namespace CustomerPortalExtensions.Domain.ECommerce
         {
             get { return CurrentOrderLines == null ? 0 : CurrentOrderLines.Sum(i => (i.ProductLineTotal)); }
         }
+
         [Ignore]
         public decimal PaymentSubTotal
         {
             get { return CurrentOrderLines == null ? 0 : CurrentOrderLines.Sum(i => (i.PaymentLineTotal)); }
         }
+
         [Ignore]
         public decimal PaymentSubTotalExcludingDonations
         {
-            get { return CurrentOrderLines == null ? 0 : CurrentOrderLines.Where(i => i.PaymentType != "DON").Sum(i => (i.PaymentLineTotal)); }
+            get
+            {
+                return CurrentOrderLines == null
+                    ? 0
+                    : CurrentOrderLines.Where(i => i.PaymentType != "DON").Sum(i => (i.PaymentLineTotal));
+            }
         }
+
         [Ignore]
         public string ShippingInfo { get; set; }
+
         public decimal ShippingTotal { get; set; }
         public string DiscountInfo { get; set; }
         public decimal DiscountTotal { get; set; }
@@ -83,61 +101,103 @@ namespace CustomerPortalExtensions.Domain.ECommerce
         public string VoucherProductCategoryFilter { get; set; }
         public decimal VoucherMinimumPayment { get; set; }
         public int VoucherMinimumItems { get; set; }
-        //[Ignore]
-        //public decimal VoucherTotal
-        //{
-        //    get { return GetVoucherTotal(); }
-        //}
 
         public decimal GetVoucherTotal()
         {
-            if (VoucherId == 0 || VoucherMinimumPayment > PaymentSubTotalExcludingDonations || VoucherMinimumItems > NumberOfItemsExcludingDonations)
-                return 0;
-            if (VoucherAmount > 0)
-                return VoucherAmount;
-            if (VoucherPercentage > 0)
+            return GetVoucherDetail().Amount;
+        }
+
+        public VoucherDetail GetVoucherDetail()
+        {
+            var voucherDetail=new VoucherDetail();
+             
+            if (!HasValidVoucher())
+            {
+                voucherDetail.Amount = 0;
+            }
+            else if (HasVoucherAmount())
+            {
+                voucherDetail.Amount = VoucherAmount;
+                voucherDetail.Detail = "Voucher discount of "+string.Format("{0:C}",voucherDetail.Amount)+" applied to whole order";
+            }
+            else if (VoucherPercentage > 0)
             {
                 if (!String.IsNullOrEmpty(VoucherCategoryFilter))
                 {
                     var selectedOrderLines =
-                        CurrentOrderLines.Where(i => i.ProductVoucherCategory.StartsWith(VoucherCategoryFilter));
-                    return (selectedOrderLines == null)
-                               ? 0
-                               : ((decimal)VoucherPercentage / 100) * selectedOrderLines.Sum(i => i.PaymentLineTotal);
+                        CurrentOrderLines.Where(i => i.ProductVoucherCategory.StartsWith(VoucherCategoryFilter)).ToList();
+                    voucherDetail.Amount = ((decimal) VoucherPercentage/100)*
+                                           selectedOrderLines.Sum(i => i.PaymentLineTotal);
+                    foreach (var orderLine in selectedOrderLines)
+                    {
+                        voucherDetail.Detail += "Voucher discount of " +string.Format("{0:C}",((decimal) VoucherPercentage/100)*
+                                                orderLine.PaymentLineTotal) + " applied to " + orderLine.ProductTitle +
+                                                "\n";
+                    }
                 }
-                if (!String.IsNullOrEmpty(VoucherProductCategoryFilter))
+                else if (!String.IsNullOrEmpty(VoucherProductCategoryFilter))
                 {
                     var selectedOrderLines =
-                        CurrentOrderLines.Where(i => i.ProductCategory.StartsWith(VoucherProductCategoryFilter));
-                    return (selectedOrderLines == null)
-                               ? 0
-                               : ((decimal)VoucherPercentage / 100) * selectedOrderLines.Sum(i => i.PaymentLineTotal);
+                        CurrentOrderLines.Where(i => i.ProductCategory.StartsWith(VoucherProductCategoryFilter)).ToList();
+                    voucherDetail.Amount = ((decimal) VoucherPercentage/100)*
+                                           selectedOrderLines.Sum(i => i.PaymentLineTotal);
+                    foreach (var orderLine in selectedOrderLines)
+                    {
+                        voucherDetail.Detail += "Voucher discount of " + string.Format("{0:C}",((decimal) VoucherPercentage/100)*
+                                                orderLine.PaymentLineTotal) + " applied to " + orderLine.ProductTitle +
+                                                "\n";
+                    }
                 }
-                return ((decimal) VoucherPercentage/100)*PaymentSubTotalExcludingDonations;
+                else
+                {
+                    voucherDetail.Amount=((decimal) VoucherPercentage/100)*PaymentSubTotalExcludingDonations;
+                    voucherDetail.Detail = "Voucher discount of "+string.Format("{0:C}",voucherDetail.Amount)+" applied to whole order";
+                }
             }
-            if (VoucherPerItemAmount > 0)
+            else if (VoucherPerItemAmount > 0)
             {
                 if (!String.IsNullOrEmpty(VoucherCategoryFilter))
                 {
                     var selectedOrderLines =
-                        CurrentOrderLines.Where(i => i.ProductVoucherCategory.StartsWith(VoucherCategoryFilter));
-                    return (selectedOrderLines == null)
-                               ? 0
-                               : selectedOrderLines.Sum(i => i.Quantity) * VoucherPerItemAmount;
+                        CurrentOrderLines.Where(i => i.ProductVoucherCategory.StartsWith(VoucherCategoryFilter)).ToList();
+
+                    foreach (var orderLine in selectedOrderLines)
+                    {
+                        voucherDetail.Detail += "Voucher discount of " + string.Format("{0:C}",(orderLine.Quantity*VoucherPerItemAmount)) + " applied to " + orderLine.ProductTitle +
+                                                "\n";
+                    }
+                    voucherDetail.Amount=selectedOrderLines.Sum(i => i.Quantity)*VoucherPerItemAmount;
                 }
-                if (!String.IsNullOrEmpty(VoucherProductCategoryFilter))
+                else if (!String.IsNullOrEmpty(VoucherProductCategoryFilter))
                 {
                     var selectedOrderLines =
-                        CurrentOrderLines.Where(i => i.ProductCategory.StartsWith(VoucherProductCategoryFilter));
-                    return (selectedOrderLines == null)
-                               ? 0
-                               : selectedOrderLines.Sum(i => i.Quantity) * VoucherPerItemAmount;
+                        CurrentOrderLines.Where(i => i.ProductCategory.StartsWith(VoucherProductCategoryFilter)).ToList();
+                    foreach (var orderLine in selectedOrderLines)
+                    {
+                        voucherDetail.Detail += "Voucher discount of " + string.Format("{0:C}",(orderLine.Quantity*VoucherPerItemAmount)) + " applied to " + orderLine.ProductTitle +
+                                                "\n";
+                    }
+                    voucherDetail.Amount=selectedOrderLines.Sum(i => i.Quantity)*VoucherPerItemAmount;
                 }
-                return NumberOfItemsExcludingDonations * VoucherPerItemAmount;
-                
-                
+                else
+                {
+                    voucherDetail.Detail = "Voucher discount of " + string.Format("{0:C}",VoucherPerItemAmount) +
+                                           " applied to each item in order";
+                    voucherDetail.Amount = NumberOfItemsExcludingDonations*VoucherPerItemAmount;
+                }
             }
-            return 0;
+            return voucherDetail;
+        }
+
+        public bool HasValidVoucher()
+        {
+            return (VoucherId != 0 && VoucherMinimumPayment <= PaymentSubTotalExcludingDonations &&
+                    VoucherMinimumItems <= NumberOfItemsExcludingDonations);
+        }
+
+        private bool HasVoucherAmount()
+        {
+            return (VoucherAmount > 0);
         }
 
         [Ignore]
@@ -291,6 +351,8 @@ namespace CustomerPortalExtensions.Domain.ECommerce
             orderLine.ProductOptionTitle = newProduct.OptionTitle;
             orderLine.ProductOptionId = newProduct.OptionId;
             orderLine.ProductOptionExternalId = newProduct.OptionExternalId;
+            orderLine.StartDate = newProduct.StartDate;
+            orderLine.FinishDate = newProduct.FinishDate;
 
             orderLine.Quantity = quantity;
             orderLine.PaymentType = paymentType;
@@ -519,6 +581,7 @@ namespace CustomerPortalExtensions.Domain.ECommerce
         }
         public string OrderStatus { get; set; }
         public string PaymentStatus { get; set; }
+
     }
     public class ProductOption
     {
@@ -541,6 +604,16 @@ namespace CustomerPortalExtensions.Domain.ECommerce
         public decimal Amount { get; set; }
     }
 
+
+    public class OrderSummary
+    {
+        public int OrderId { get; set; }
+        public int NumberOfItems { get; set; }
+        public string ProductSubTotal { get; set; }
+        public string PaymentTotal { get; set; }
+        public string Status { get; set; }
+    }
+
     public class OrderResultSummary
     {
         public int OrderId { get; set;  }
@@ -556,11 +629,10 @@ namespace CustomerPortalExtensions.Domain.ECommerce
         public string ShippingInfo { get; set; }
         public string ShippingTotal { get; set; }
         public string PaymentTotal { get; set; }
-        public string PaymentLineTotal;
+        public string PaymentLineTotal { get; set; }
         public bool Status { get; set; }
-        public string Message;
         public bool ContainsGiftAidableProducts { get; set; }
-        
+        public string Message { get; set; }
     }
     public class OrderQueueItem 
     {
@@ -634,6 +706,12 @@ namespace CustomerPortalExtensions.Domain.ECommerce
     {
         public string Code { get; set; }
         public string Description { get; set; }
+    }
+
+    public class VoucherDetail
+    {
+        public decimal Amount { get; set; }
+        public string Detail { get; set; }
     }
 
 }

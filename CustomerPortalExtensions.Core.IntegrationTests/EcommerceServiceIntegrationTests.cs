@@ -332,6 +332,32 @@ namespace CustomerPortal.Tests
             Assert.IsTrue(order.ContainsProducts());
 
         }
+        [TestMethod]
+        public void ShouldReturnCorrectOrderSummary()
+        {
+            var operationStatus = _sut.AddProductToOrder(100, 0, 1, "F");
+            Assert.IsTrue(operationStatus.Status);
+            var order = operationStatus.Order;
+
+            Assert.AreEqual(1, order.NumberOfItems);
+            Assert.AreEqual(5, order.ProductSubTotal);
+            Assert.AreEqual(5, order.PaymentTotal);
+            Assert.IsTrue(order.ContainsProductType("P"));
+            Assert.IsTrue(order.ContainsProducts());
+
+            int orderId = order.OrderId;
+
+            //check that when go back and get the order summary
+            //we get the same results
+            var operationSummaryStatus = _sut.GetOrderSummaryById(orderId);
+            Assert.IsTrue(operationSummaryStatus.Status);
+            var orderSummary = operationSummaryStatus.OrderSummary;
+
+            Assert.AreEqual(1, orderSummary.NumberOfItems);
+            Assert.AreEqual("£5.00", orderSummary.ProductSubTotal);
+            Assert.AreEqual("£5.00", orderSummary.PaymentTotal);
+
+        }
 
         [TestMethod]
         public void ShouldAddCourseAndFullPaymentToBasket()

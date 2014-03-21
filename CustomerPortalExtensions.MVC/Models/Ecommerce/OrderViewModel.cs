@@ -4,8 +4,7 @@ using CustomerPortalExtensions.Domain.ECommerce;
 
 namespace CustomerPortalExtensions.MVC.Models.Ecommerce
 {
-    public class OrderViewModel
-    
+    public class OrderViewModel    
     {
         public int OrderId { get; set; }
         public int OrderNumber { get; set; }
@@ -39,6 +38,16 @@ namespace CustomerPortalExtensions.MVC.Models.Ecommerce
         public string PaymentGatewayCompletionPage { get; set; }
         public string SpecialRequirementsText { get; set; }
         public Contact ContactDetails { get; set; }
+        public string FullErrorDetails { set; get; }
+    }
+
+    public class OrderSummaryViewModel    
+    {
+        public int OrderId { get; set; }
+        public int NumberOfItems { get; set; }
+        public string ProductSubTotal { get; set; }
+        public string PaymentTotal { get; set; }
+        public bool Status { get; set; }
         public string FullErrorDetails { set; get; }
     }
 }

@@ -103,7 +103,7 @@ namespace CustomerPortalExtensions.Infrastructure.ECommerce.Orders
             mailBodyNotification.AppendFormat("<p>Address: {0}<br />{1}<br />{2}<br />{3}<br />{4}<br />{5}</p>",
                                               contact.Address1, contact.Address2, contact.Town, contact.County,
                                               contact.Postcode,
-                                              contact.Country);
+                                              contact.CountryDesc);
             mailBodyNotification.AppendFormat("<p>Telephone : {0}\nMobile: {1}</p>", contact.Telephone, contact.Mobile);
             mailBodyNotification.AppendFormat("<p>Email: {0}</p>", contact.Email);
 
@@ -163,6 +163,11 @@ namespace CustomerPortalExtensions.Infrastructure.ECommerce.Orders
                     if (foundCourses)
                     {
                         mailBodyLocation.AppendFormat("<p>Special Requirements: {0}</p>", order.SpecialRequirements);
+                        if (order.HasValidVoucher())
+                        {
+                            mailBodyLocation.AppendFormat("<p><b>The following voucher has been applied to this order: {0} {1}.</b></p>", order.VoucherInfo, order.GetVoucherDetail());
+                        }
+                        
                         SendEmail("reception@field-studies-council.org", locationEmail,
                                   "WEBSITE Individuals and Families Booking",
                                   mailBodyNotification.ToString() + mailBodyLocation.ToString());
@@ -223,7 +228,13 @@ namespace CustomerPortalExtensions.Infrastructure.ECommerce.Orders
                 mailBodyNotification.Append("<p><b>This person has made a Gift Aid Agreement.</b></p>");
 
                 mailBodyCustomer.Append(
-                    "Thank you for making a Gift Aid declaration. [..]");
+                    "Thank you for making a Gift Aid declaration.");
+            }
+
+            if (order.HasValidVoucher())
+            {
+                mailBodyNotification.AppendFormat("<p><b>The following voucher has been applied to this order: {0} {1}.</b></p>", order.VoucherInfo, order.GetVoucherDetail());
+                mailBodyCustomer.AppendFormat("<p><b>The following voucher has been applied to your order: {0} {1}.</b></p>", order.VoucherInfo, order.GetVoucherDetail());
             }
 
 

@@ -170,6 +170,10 @@ namespace CustomerPortalExtensions.Application.Contacts
                     if (operationStatus.Status)
                     {
                         Contact contact = operationStatus.Contact;
+
+                        contact.CountryDesc = _contactSynchroniser.GetCountry(contact.Country).Name;
+                        if (contact.SeparateDeliveryAddress)
+                            contact.DeliveryCountryDesc = _contactSynchroniser.GetCountry(contact.DeliveryCountry).Name;
                         
                         //check if the UserId for the contact needs updating
                         string currentUserId = _authenticationHandler.GetUserId();

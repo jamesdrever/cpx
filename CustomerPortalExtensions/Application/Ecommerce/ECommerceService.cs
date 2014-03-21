@@ -1,4 +1,5 @@
 ﻿using System;
+using CustomerPortalExtensions.Domain.Contacts;
 using CustomerPortalExtensions.Domain.ECommerce;
 using CustomerPortalExtensions.Domain.Ecommerce;
 using CustomerPortalExtensions.Domain.Operations;
@@ -100,6 +101,21 @@ namespace CustomerPortalExtensions.Application.Ecommerce
             }
             return orderOperationStatus;
         }
+
+        public OrderSummaryOperationStatus GetOrderSummaryById(int orderId)
+        {
+            var orderSummaryOperationStatus = new OrderSummaryOperationStatus();
+            try
+            {
+                orderSummaryOperationStatus = _orderCoordinator.GetOrderSummary(orderId);
+            }
+            catch (Exception e)
+            {
+                orderSummaryOperationStatus.LogFailedOperation(e, "An error has occurred retrieving the order");
+            }
+            return orderSummaryOperationStatus;
+        }
+
 
 
         /// <summary>

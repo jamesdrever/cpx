@@ -79,6 +79,35 @@ namespace CustomerPortalExtensions.Infrastructure.ECommerce.Orders
             return operationStatus;
         }
 
+        public OrderOperationStatus GetOrder(int orderId)
+        {
+            var operationStatus = new OrderOperationStatus();
+            try
+            {
+                var sql = Sql.Builder
+                    .Select("*")
+                    .From("cpxOrder");
+
+                sql.Append("WHERE OrderId=@0", orderId);
+
+
+                var order =
+                    _database.SingleOrDefault<Order>(sql);
+
+                order.OrderLines = _database.Fetch<OrderLine>("SELECT * FROM cpxOrderLines WHERE OrderId=@0", order.OrderId);
+                operationStatus.Order = order;
+                operationStatus.Status = true;
+            }
+            catch (Exception e)
+            {
+                operationStatus = OperationStatusExceptionHelper<OrderOperationStatus>
+                    .CreateFromException("An error has occurred retrieving the order", e);
+            }
+            return operationStatus;
+
+
+        }
+
         public OrdersOperationStatus GetOrders(Contact contact)
         {
             var operationStatus = new OrdersOperationStatus();
@@ -176,29 +205,7 @@ namespace CustomerPortalExtensions.Infrastructure.ECommerce.Orders
         }
 
        
-        public OrderOperationStatus GetOrder(int orderId)
-        {
-            var operationStatus = new OrderOperationStatus();
-            try
-            {
-                var order =
-                    _database.SingleOrDefault<Order>(
-                        "SELECT * FROM cpxOrder WHERE OrderId=@0",
-                        orderId);
-                order.OrderLines = _database.Fetch<OrderLine>("SELECT * FROM cpxOrderLines WHERE OrderId=@0",
-                                                              orderId);
-                operationStatus.Order = order;
-                operationStatus.Status = true;
-            }
-            catch (Exception e)
-            {
-                operationStatus = OperationStatusExceptionHelper<OrderOperationStatus>
-                    .CreateFromException("An error has occurred getting the order", e);
-            }
-            return operationStatus;
-
-
-        }
+        
 
         public OrderOperationStatus ProcessOrder(Order order, Contact contact)
         {

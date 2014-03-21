@@ -16,6 +16,7 @@ namespace CARECustomerPortalExtensions
     public class CareContactSynchroniser : IContactSynchroniser
     {
 
+
         #region ContactDetails
 
         public ContactOperationStatus SaveContact(Contact contact)
@@ -198,14 +199,14 @@ namespace CARECustomerPortalExtensions
             Contact contact = new Contact();
 
 
-            string sendXML = String.Format("<Parameters>" +
+            string sendXml = String.Format("<Parameters>" +
                 "<ContactNumber>{0}</ContactNumber>" +
                 //"<AddressNumber>{1}</AddressNumber>" +
                 "</Parameters>",
                 externalContactNumber);//, externalAddressNumber
 
             //Load xmldata into XDocument Object
-            XDocument sendingXMLDoc = XDocument.Parse(sendXML);
+            XDocument sendingXMLDoc = XDocument.Parse(sendXml);
 
             CustomerPortalExtensions.CareWebServices.NDataAccessSoapClient careWebServices = new CustomerPortalExtensions.CareWebServices.NDataAccessSoapClient();
             string returnXML = careWebServices.SelectContactData(CustomerPortalExtensions.CareWebServices.XMLContactDataSelectionTypes.xcdtContactInformation, sendingXMLDoc.ToString());
@@ -559,17 +560,21 @@ namespace CARECustomerPortalExtensions
         //faster as database call, but creates need for db connection
         public List<ContactTitle> GetContactTitles()
         {
-            var db = new Database(ConfigurationManager.AppSettings["CP_SyncDSN"], "System.Data.SqlClient");
-            //hacky way to map database fields using PetaPoco
-            return db.Fetch<ContactTitle>("SELECT title AS code,title AS name FROM titles");
+            var db = new Database("umbracoDbDSN");
+            return db.Fetch<ContactTitle>("SELECT title AS code,title AS name FROM cpxTitles");
         }
 
 
         public List<Country> GetCountries()
         {
-            var db = new Database(ConfigurationManager.AppSettings["CP_SyncDSN"], "System.Data.SqlClient");
-            //hacky way to map database fields using PetaPoco
-            return db.Fetch<Country>("SELECT country AS code,country_desc AS name FROM countries ORDER BY country_desc");
+            var db = new Database("umbracoDbDSN");
+            return db.Fetch<Country>("SELECT country AS code,country_desc AS name FROM cpxCountries ORDER BY country_desc");
+        }
+
+        public Country GetCountry(string countryCode)
+        {
+            var db = new Database("umbracoDbDSN");
+            return db.FirstOrDefault<Country>("SELECT country AS code,country_desc AS name FROM cpxCountries WHERE country=@0", countryCode);
         }
     }
     public class CareException : Exception

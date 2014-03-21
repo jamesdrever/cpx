@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using CustomerPortalExtensions.Domain.ECommerce;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -59,6 +60,27 @@ namespace CustomerPortal.Tests
             Assert.IsTrue(order.PaymentTotal == 300);
 
         }
+        [TestMethod]
+        public void ShouldUpdateQuantityAndEventDatesWhenAddingExistingEvent()
+        {
+            Order order = new Order();
+            
+            Product event1 = new Product { Title = "Test Event 1", ProductId = 1, StartDate = new DateTime(2014,08,1),FinishDate = new DateTime(2014,08,5), Price = 50 };
+            order.Add(event1, 2, "F", 50);
+            Assert.IsTrue(order.NumberOfItems == 2);
+            Assert.IsTrue(order.ContainsProduct(event1));
+            Assert.IsTrue(order.PaymentTotal == 100);
+            Product event2 = new Product { Title = "Test Event 2", ProductId = 1, StartDate = new DateTime(2014,08,1),FinishDate = new DateTime(2014,08,4), Price = 50 };
+            order.Add(event2, 3, "F", 50);
+            Assert.IsTrue(order.NumberOfItems == 3);
+            Assert.IsTrue(order.PaymentTotal == 150);
+            Assert.IsTrue(order.ContainsProduct(event1));
+            var eventInOrder = order.GetOrderLine(event1);
+            Assert.IsTrue(eventInOrder.StartDate == new DateTime(2014, 08, 1));
+            Assert.IsTrue(eventInOrder.FinishDate == new DateTime(2014, 08, 4));
+
+
+        }
 
         [TestMethod]
         public void ShouldNotUpdateWhereNotExistingProductInOrder()
@@ -115,7 +137,8 @@ namespace CustomerPortal.Tests
             orderLines.Add(new OrderLine{ Quantity=1, PaymentAmount=10 });
             order.OrderLines = orderLines;
             Assert.IsTrue(order.GetVoucherTotal()==1);
-
+            Debug.WriteLine(order.GetVoucherDetail().Detail);
+            
         }
 
         [TestMethod]
@@ -127,7 +150,7 @@ namespace CustomerPortal.Tests
             orderLines.Add(new OrderLine { Quantity = 1, PaymentAmount = 10 });
             order.OrderLines = orderLines;
             Assert.IsTrue(order.GetVoucherTotal() == 2);
-
+            Debug.WriteLine(order.GetVoucherDetail().Detail);
         }
 
         [TestMethod]
@@ -137,6 +160,7 @@ namespace CustomerPortal.Tests
             List<OrderLine> orderLines = new List<OrderLine>();
             orderLines.Add(new OrderLine
                 {
+                    ProductTitle = "Test Product for Voucher",
                     ProductVoucherCategory = "TEST1CATEGORY",
                     Quantity = 1,
                     PaymentAmount = 10
@@ -144,7 +168,7 @@ namespace CustomerPortal.Tests
             orderLines.Add(new OrderLine {ProductVoucherCategory = "TEST2CATEGORY", Quantity = 1, PaymentAmount = 10});
             order.OrderLines = orderLines;
             Assert.IsTrue(order.GetVoucherTotal() == 1);
-
+            Debug.WriteLine(order.GetVoucherDetail().Detail);
         }
 
         [TestMethod]
@@ -152,25 +176,23 @@ namespace CustomerPortal.Tests
         {
             Order order = new Order { VoucherPerItemAmount = 1, VoucherProductCategoryFilter = "TEST1", VoucherId = 1 };
             List<OrderLine> orderLines = new List<OrderLine>();
-            orderLines.Add(new OrderLine { ProductCategory = "TEST1CATEGORY", Quantity = 1, PaymentAmount = 10 });
-            orderLines.Add(new OrderLine { ProductCategory = "TEST2CATEGORY", Quantity = 1, PaymentAmount = 10 });
+            orderLines.Add(new OrderLine { ProductCategory = "TEST1CATEGORY", Quantity = 1, PaymentAmount = 10, ProductTitle = "Test Product 1 for Voucher" });
+            orderLines.Add(new OrderLine { ProductCategory = "TEST2CATEGORY", Quantity = 1, PaymentAmount = 10, ProductTitle = "Test Product 2 for Voucher" });
             order.OrderLines = orderLines;
             Assert.IsTrue(order.GetVoucherTotal() == 1);
-
+            Debug.WriteLine(order.GetVoucherDetail().Detail);
         }
-
-
 
         [TestMethod]
         public void AddPerItemVoucherWithMiniumPayment()
         {
             Order order = new Order { VoucherPerItemAmount = 1, VoucherMinimumPayment=25, VoucherId = 1 };
             List<OrderLine> orderLines = new List<OrderLine>();
-            orderLines.Add(new OrderLine {  Quantity = 1, PaymentAmount = 10 });
-            orderLines.Add(new OrderLine {  Quantity = 1, PaymentAmount = 10 });
+            orderLines.Add(new OrderLine { Quantity = 1, PaymentAmount = 10, ProductTitle = "Test Product 1 for Voucher" });
+            orderLines.Add(new OrderLine { Quantity = 1, PaymentAmount = 10, ProductTitle = "Test Product 2 for Voucher" });
             order.OrderLines = orderLines;
             Assert.IsTrue(order.GetVoucherTotal() == 0);
-
+            Debug.WriteLine(order.GetVoucherDetail().Detail);
         }
 
         [TestMethod]
@@ -182,7 +204,7 @@ namespace CustomerPortal.Tests
             orderLines.Add(new OrderLine { Quantity = 2, PaymentAmount = 10 });
             order.OrderLines = orderLines;
             Assert.IsTrue(order.GetVoucherTotal() == 0);
-
+            Debug.WriteLine(order.GetVoucherDetail().Detail);
         }
         [TestMethod]
         public void ShouldHavePositiveVoucherTotalWithMoreThanMiniumItems()
@@ -193,11 +215,11 @@ namespace CustomerPortal.Tests
             orderLines.Add(new OrderLine { Quantity = 2, PaymentAmount = 10 });
             order.OrderLines = orderLines;
             Assert.IsTrue(order.GetVoucherTotal() == 4);
-
+            Debug.WriteLine(order.GetVoucherDetail().Detail);
         }
 
         [TestMethod]
-        public void ShoulReturnLocationEmailsCorrectly()
+        public void ShouldReturnLocationEmailsCorrectly()
         {
             Order order = new Order();
             Product product = new Product

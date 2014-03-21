@@ -93,5 +93,11 @@ namespace CustomerPortalExtensions.Infrastructure.Synchronisation
         {
             return _database.Fetch<Country>("SELECT country AS code,country_desc AS name FROM cpxCountries ORDER BY country_desc");
         }
+
+        public Country GetCountry(string countryCode)
+        {
+            return _database.FirstOrDefault<Country>("SELECT country AS code,country_desc AS name FROM cpxCountries WHERE country=@0",countryCode);
+        }
+
     }
 }

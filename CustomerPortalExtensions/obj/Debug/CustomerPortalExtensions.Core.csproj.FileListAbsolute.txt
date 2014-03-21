@@ -85,6 +85,7 @@ C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\Cu
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\bin\umbraco.macroRenderings.xml
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\bin\umbraco.providers.xml
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\bin\umbraco.webservices.xml
-C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\obj\Debug\CustomerPortalExtensions.Core.csprojResolveAssemblyReference.cache
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\obj\Debug\CustomerPortalExtensions.dll
 C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\obj\Debug\CustomerPortalExtensions.pdb
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\bin\CustomerPortalExtensions.dll.config
+C:\Users\james\Documents\Visual Studio 2012\Projects\CustomerPortalExtensions\CustomerPortalExtensions\obj\Debug\CustomerPortalExtensions.Core.csprojResolveAssemblyReference.cache
